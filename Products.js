@@ -98,7 +98,7 @@ const products = [
         categoryName: "Grow Lights",
         price: 2599,
         images: [
-            "Images/LED.jpg",
+            "LED.jpg",
             "https://images.openai.com/static-rsc-4/rg_L5eQTHPK3LWjNOyCJ2ehsesLXzVNe79J8N2JWpG9h_O-E9qB7yLecFWx6baObEqqvaNbi6uKxns-ecRk9jpCzot1zt1VLu5-5umTX_dc9jYByWqQl4uJbaxTwc3RQ9qK097Xz6y7OTGboTbDiobyznc6GaHB1-cT10UXCDwGjTJpRKeWRC81YaQuU9lId?purpose=fullsize",
             "https://images.openai.com/static-rsc-4/NdFGt7EQLD-XcGKmVnZYx3Iy0m2YEIZiC4bM0MVmv3uJCwkcbEH1HS8GTfKPCeOEGDi87Lg5msgCNXX-j6QDtXvC43Fcb3xmAhusD6HaM6GiTj4EWg5T-VP_3rAYAjzTGKePs8ojTGbhNFCqd6N2VfX80kRcevbr3AaR3-_1pEQFY0PMBpS0p1SOT4Exv1s_?purpose=fullsize"
         ],
