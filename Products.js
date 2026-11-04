@@ -14,7 +14,7 @@ const products = [
         images: [
             "https://images.openai.com/static-rsc-4/NwOEn3JC4F_ZXUMXnA3lgWrzr7PfHaO7PMo9_LMTH9DsQnEFSsnv8Z-WRz2yWxHRpbACDbKNUpLP0e2iCxpUAQ9rUcZv5IecS8KzNsFmzKVwfEKP7z7HH9wYrkrNT0jUn2ArEsOW4E55o0WQpkM8ya63kaWk7q9-ogBpkyKHbBEbmMmBubvqiQDhE_eTYjlm?purpose=fullsize",
             "https://images.openai.com/static-rsc-4/Hnf_Q0B7QYvz6JVBY7TvEr69xviSiKULj0aaGEZKwCfE3D6tRcnksB6SEr2dJBJL2Z9AhALXqZaLON3fs4kVVX1tUX1cpM3Kfsyxi9ppTUNJVGq2J_ViEpgMotwRu9nR49rr-tyPZmGPMUvP83rByQ6fwEBKQQvvLp3eg82YiuQmaE4ZQGDuJwfWv5BYNeVA?purpose=fullsize",
-            "Images/Lighting.jpg"
+            "Lighting.jpg"
         ],
         description:
             "An indoor plant light designed to supplement natural daylight " +
@@ -70,8 +70,8 @@ const products = [
         price: 3999,
         images: [
             "https://images.openai.com/static-rsc-4/POVEtXMqqD1IdbJ9dHaTlqWwkVe5LqlercyXro4yTMZZWDI_iF-CMec50iNy1LlaNYBLFgcqfUCeoWDC-t5SJm8U7GU-X7Bi0IkbIb1wojRkPvX4r6zpjcXABW_lhZdzs6GK5EshvT-7Tzzm_BCLXpH_uS-5B0N4rCJnUaHJ4ucXakdjeO3-Fg6GacEw_34A?purpose=fullsize",
-            "Images/Growing Tower.jpeg",
-            "Images/Growing Tower.jpeg"
+            "Growing Tower.jpeg",
+            "Growing Tower.jpeg"
         ],
         description:
             "A vertical growing structure that arranges planting locations " +
@@ -128,8 +128,8 @@ const products = [
         price: 1599,
         images: [
             "https://images.openai.com/static-rsc-4/517eAiNhz9Fr3I22dDS0tRAN55Dx7sBqXy7__MItW3Mu_l5CHPXSOtuew2W6aJpPaioqDFXuEPGAQ6VMoMg1jzN77Rzcwdp1oALEDbRVRBmi4sh0FKCQxHNIYIYBY_VFP8JuAoIHV_-LKWBLVyDZulYkMK_zA-OIad9FOHovKOMoZJSQJdla0cPL4bFgqW6U?purpose=fullsize",
-            "Images/Plant care.jpeg",
-            "Images/Plant care.jpeg"
+            "Plant care.jpeg",
+            "Plant care.jpeg"
         ],
         description:
             "A sample plant-care collection for organising common gardening " +
@@ -158,7 +158,7 @@ const products = [
         images: [
             "https://images.openai.com/static-rsc-4/l5DIGgry7alxw90wB2qupOOmdacd62KUmGshg3Qp_fcHmk4KV_1CB5iK7Rj_A2D87smFhPiueIOiv7YenNto274ZvqkJ8nqYAfm7RAdrsnbN_vjO2i9RymfIvcpwWLwG-eP9_b3D_bhu64uxTBnbTUYCj41_01Nwm-LkbeS8_qyCMuqHdwhGS8xThZlfhx9G?purpose=fullsize",
             "https://images.openai.com/static-rsc-4/jP3F2IW61oZZ-Yciv4vR6uzye2TebGOlxDrsccGaKTmVBRYd_upzh4dTqw6jgjzRYow9inZ4tJ-35RatHHy_7zln_1z8eEj5lc3ES4h5KFOh0F37TVXgdO6LBnNX_T-9hDMN3tR_uAlJpkjM3DiNfFPaBCXYFSK0ShCQ1oiOc7nO5sQNiioI4mCIO9pdhxeq?purpose=fullsize",
-            "Images/Home Garden kit.jpeg"
+            "Home Garden kit.jpeg"
         ],
         description:
             "A starter-kit concept for people interested in growing plants " +
@@ -186,8 +186,8 @@ const products = [
         price: 499,
         images: [
             "https://images.openai.com/static-rsc-4/NFh5uZB6N0BcaiQWTwmhPHGTbr4RQ6Yc8Jvql4P1onK954reTxjBP256EO-CT3NTv9hZS7H3kavrSURo8IC1iJul5ExA3rRvVdh13X6iVKlV6IqfIx9OcVeSsQem-oxLq1zx0RcOJZd9wKdT45IS4YAcUdvq8EWV1hfamUk8OCcEtEuxT9HH68VGpRbmgWNd?purpose=fullsize",
-            "Images/Plant care.jpeg",
-            "Images/Growing Tower.jpeg"
+            "Plant care.jpeg",
+            "Growing Tower.jpeg"
         ],
         description:
             "Reusable-style planting pots with openings that can support " +
