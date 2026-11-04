@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Visit | HydroGrow</title>
+
+    <link rel="stylesheet" href="Demo website style.css">
+    <link rel="stylesheet" href="Book-Visit.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+  <a href="#home" class="logo">
+    <img src="Images/hydrofarm-logo1.png" alt="HydroFarm Logo">
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+  <nav id="navMenu">
+    <div class="nav-dropdown" id="homeDropdown">
+
+        <div class="nav-dropdown" id="homeDropdown">
+
+    <button class="nav-dropdown-btn"
+            id="homeDropdownBtn"
+            aria-expanded="false"
+            aria-controls="homeDropdownMenu">
+
+        <span>Home</span>
+        <span class="dropdown-arrow">⌃</span>
+
+    </button>
+
+    <div class="dropdown-menu" id="homeDropdownMenu">
+
+        <a href="Demo website.html"
+           class="dropdown-option">
+            Home-Classic
+        </a>
+
+        <a href="Home Standard.html"
+           class="dropdown-option">
+            Home-Standard
+        </a>
+
+    </div>
+
+</div>
+  </div>
+
+    <a href="About.html">About</a>
+    <a href="Products.html">Products</a>
+    <a href="Services.html">Services</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Commercial.html">Commercial</a>
+    <a href="Contact.html">Contact</a>
+
+</nav>
+  <div class="header-actions">
+    <button id="directionBtn" class="circle-btn" title="Switch RTL/LTR">RTL</button>
+    <button id="themeBtn" class="circle-btn" title="Switch dark/light mode">☀</button>
+
+    
+    <a href="Login.html" class="login-btn">Login</a>
+  </div>
+</header>
+
+    <!-- Copy the complete shared header from Demo website.html here.
+         Keep its logo, navigation, theme and direction buttons. -->
+
+    <main class="visit-page">
+
+        <section class="visit-hero">
+            <div class="visit-hero-content">
+                <span class="visit-eyebrow">VISIT HYDROPONIC FARMING STORE</span>
+
+                <h1>Experience the Future of Farming</h1>
+
+                <p>
+                    Discover hydroponic systems, vertical gardens
+                    and smart growing solutions. Schedule a visit
+                    to explore how modern farming works.
+                </p>
+
+                <div class="visit-highlights">
+                    <span>Explore Growing Systems</span>
+                    <span>Learn About Hydroponics</span>
+                    <span>Discover Smart Gardens</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="visit-form-section">
+
+            <div class="visit-info">
+                <span class="visit-label">PLAN YOUR VISIT</span>
+
+                <h2>Let's Grow Something Great Together</h2>
+
+                <p>
+                    Complete the form to request a visit.
+                    Our team can follow up to confirm the schedule
+                    and provide any additional details.
+                </p>
+
+                <div class="visit-info-card">
+                    <span>
+                        <i class="fas fa-calendar-days"></i>
+                    </span>
+                    <div>
+                        <h3>Choose Your Date</h3>
+                        <p>Tell us your preferred visiting date.</p>
+                    </div>
+                </div>
+
+                <div class="visit-info-card">
+                    <span class="service-icon">
+                   <i class="fa-solid fa-seedling"></i>
+        </span>
+                    <div>
+                        <h3>Explore Our Solutions</h3>
+                        <p>Learn about home and commercial growing.</p>
+                    </div>
+                </div>
+
+                <div class="visit-info-card">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <div>
+                        <h3>Confirmation</h3>
+                        <p>We can contact you to confirm availability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visit-form-card">
+
+                <h2>Book Your Visit</h2>
+
+                <p class="visit-form-description">
+                    Fill in your details below.
+                </p>
+
+                <form id="visitForm">
+
+                    <div class="visit-field">
+                        <label for="visitorName">Full Name *</label>
+                        <input
+                            type="text"
+                            id="visitorName"
+                            name="visitorName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="visit-form-row">
+
+                        <div class="visit-field">
+                            <label for="visitorEmail">Email Address *</label>
+                            <input
+                                type="email"
+                                id="visitorEmail"
+                                name="visitorEmail"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="visit-field">
+                            <label for="visitorPhone">Phone Number *</label>
+                            <input
+                                type="tel"
+                                id="visitorPhone"
+                                name="visitorPhone"
+                                placeholder="Enter phone number"
+                                autocomplete="tel"
+                                pattern="[0-9+() -]{7,20}"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="visit-form-row">
+
+                        <div class="visit-field">
+                            <label for="visitDate">Preferred Date *</label>
+                            <input
+                                type="date"
+                                id="visitDate"
+                                name="visitDate"
+                                required
+                            >
+                        </div>
+
+                        <div class="visit-field">
+                            <label for="visitTime">Preferred Time *</label>
+                            <select id="visitTime" name="visitTime" required>
+                                <option value="">Select a time</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="visit-form-row">
+
+                        <div class="visit-field">
+                            <label for="visitorCount">Number of Visitors *</label>
+                            <select
+                                id="visitorCount"
+                                name="visitorCount"
+                                required
+                            >
+                                <option value="">Select visitors</option>
+                                <option value="1">1 visitor</option>
+                                <option value="2">2 visitors</option>
+                                <option value="3">3 visitors</option>
+                                <option value="4">4 visitors</option>
+                                <option value="5">5 visitors</option>
+                                <option value="6+">6 or more visitors</option>
+                            </select>
+                        </div>
+
+                        <div class="visit-field">
+                            <label for="visitPurpose">Purpose of Visit *</label>
+                            <select
+                                id="visitPurpose"
+                                name="visitPurpose"
+                                required
+                            >
+                                <option value="">Choose a purpose</option>
+                                <option value="Home Gardening">Home Gardening</option>
+                                <option value="Hydroponic Systems">Hydroponic Systems</option>
+                                <option value="Commercial Farming">Commercial Farming</option>
+                                <option value="Product Demonstration">Product Demonstration</option>
+                                <option value="Training">Training and Learning</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="visit-field">
+                        <label for="visitMessage">
+                            Additional Message
+                        </label>
+                        <textarea
+                            id="visitMessage"
+                            name="visitMessage"
+                            rows="4"
+                            placeholder="Tell us what you would like to explore..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="visit-submit-btn">
+                        Request a Visit <span>→</span>
+                    </button>
+
+                    <p
+                        id="visitMessageStatus"
+                        class="visit-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                    <p class="visit-note">
+                        Your visit is a request until the schedule
+                        is confirmed by the HydroFarm team.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<footer class="main-footer">
+    <div class="footer-container">
+
+        <!-- Brand section -->
+        <div class="footer-brand">
+            <div class="brand-heading">
+             <a href="#home" class="footer-logo">
+        <img src="Images/hydrofarm-logo1.png"
+             alt="HydroFarm - Hydroponic and Vertical Farming">
+    </a>
+</div>
+
+<p class="tagline">
+    Growing a greener future, one plant at a time.
+</p>
+
+
+            <p class="brand-description">
+                Every great harvest starts somewhere.
+               Let's find the right growing solution for you.
+            </p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="Home Standard.html">Home 2</a></li>
+                <li><a href="Products.html">Our Products</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#journal">Farming Journal</a></li>
+            </ul>
+        </div>
+
+        <!-- Plan your visit -->
+        <div class="footer-column">
+            <h3>Plan Your Visit</h3>
+            <ul>
+                <li><a href="#visitor-info">Visitor Information</a></li>
+                <li><a href="#hours">Opening Hours</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Discover -->
+        <div class="footer-column">
+            <h3>Our Products</h3>
+            <ul>
+                <li><a href="#Lighting">LED Grow Light</a></li>
+                <li><a href="#Nutrients">Hydroponic Nutrients</a></li>
+                <li><a href="#Planting Towers">Growing Towers</a></li>
+                <li><a href="#Soil">Plant Care Essentials</a></li>
+                <li><a href="#Planting">Home Garden Kit</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Bottom footer -->
+    <div class="footer-bottom">
+        <p>
+            © <span id="current-year"></span>
+            <strong>Hydrophonic Farming.</strong>
+            All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="Demo website script.js"></script>
+    <script src="Book-Visit.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover hydroponic growing systems, vertical farms, grow lights, nutrients and commercial farming solutions.">
+    <title>Hydroponic & Vertical Farming</title>
+
+    <link rel="stylesheet" href="Demo website style.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="Products.css">
+    <script src="Products.js" defer></script>
+    <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+
+<!-- Navigation -->
+<header class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+        <img src="Images/hydrofarm-logo1.png" alt="HydroFarm Logo">
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        ☰
+    </button>
+
+    <!-- Navigation Links -->
+    <nav id="navMenu">
+
+        <!-- Home Dropdown -->
+        <div class="nav-dropdown" id="homeDropdown">
+
+            <button
+                class="nav-dropdown-btn"
+                id="homeDropdownBtn"
+                aria-expanded="false"
+                aria-controls="homeDropdownMenu"
+                type="button">
+
+                <span>Home</span>
+                <span class="dropdown-arrow">⌃</span>
+
+            </button>
+
+            <div class="dropdown-menu" id="homeDropdownMenu">
+
+                <a href="index.html" class="dropdown-option">
+                    Home-Classic
+                </a>
+
+                <a href="Home Standard.html" class="dropdown-option">
+                    Home-Standard
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Other Navigation Links -->
+        <a href="About.html">About</a>
+        <a href="Products.html">Products</a>
+        <a href="Services.html">Services</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Commercial.html">Commercial</a>
+        <a href="Contact.html">Contact</a>
+
+    </nav>
+
+    <!-- Header Action Buttons -->
+    <div class="header-actions">
+
+        <button
+            id="directionBtn"
+            class="circle-btn"
+            type="button"
+            title="Switch RTL/LTR">
+            RTL
+        </button>
+
+        <button
+            id="themeBtn"
+            class="circle-btn"
+            type="button"
+            title="Switch dark/light mode">
+             <i class="fas fa-sun"></i>
+        </button>
+
+        <a href="Login.html" class="login-btn">
+            Login
+        </a>
+
+    </div>
+
+</header>
+
+
+    <main>
+        <!-- Home -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow"><b>✦ THE FUTURE OF FARMING</b></span>
+                <h1>Grow More.<br>Use Less.<br><span>Live Green.</span></h1>
+
+                <p>
+                    Discover smarter ways to grow fresh, healthy plants
+                    without soil. Bring sustainable farming into your
+                    home, garden or business.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="Products.html" class="btn btn-primary">
+                    Explore Products ↗
+                    </a>
+                    <a href="#guide" class="btn btn-outline">
+                        Start Growing
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>Soil-Free</strong>
+                        <span>Growing systems</span>
+                    </div>
+                    <div>
+                        <strong>Space-Smart</strong>
+                        <span>Vertical designs</span>
+                    </div>
+                    <div>
+                        <strong>Future-Ready</strong>
+                        <span>Green technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1000&q=85"
+                      alt="Fresh green plants growing in a modern greenhouse">
+                </div>
+                <div class="floating-card card-top">
+                    <span class="service-icon">
+            <i class="fa-solid fa-seedling"></i>
+        </span>
+                    <div>
+                        <strong>Grow Naturally</strong>
+                        <small>Smarter growing starts here</small>
+                    </div>
+                </div>
+                <div class="floating-card card-bottom">
+                    <span class="live-dot"></span>
+                    Sustainable growing
+                </div>
+                <span class="decor decor-one">✳</span>
+                <span class="decor decor-two">✿</span>
+            </div>
+        </section>
+
+        
+<!-- SECTION 1: FEATURED PRODUCTS -->
+<section class="home-section products-section" id="products">
+    <div class="section-heading">
+        <span class="section-label">OUR COLLECTION</span>
+        <h2>Everything You Need to Grow</h2>
+        <p>Discover smart tools and quality products for your
+           hydroponic and vertical farming journey.</p>
+    </div>
+
+    <div class="product-grid">
+        <article class="product-card">
+            <img src="Images/Lighting.jpg" alt="LED grow light">
+            <div class="product-info">
+                <span class="product-tag">POPULAR</span>
+                <h3>LED Grow Lights</h3>
+                <p>Give your plants the light they need to thrive
+                   indoors throughout the year.</p>
+                <a href="Products.html" class="product-link">Explore Product ↗</a>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Images/Nutrients.jpg" alt="Hydroponic plant nutrients">
+            <div class="product-info">
+                <span class="product-tag">PLANT CARE</span>
+                <h3>Hydroponic Nutrients</h3>
+                <p>Support healthy plant growth with nutrients
+                   designed for soil-free growing systems.</p>
+                <a href="products.html" class="product-link">Explore Product ↗</a>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Images/Growing Tower.jpeg" alt="Vertical growing tower">
+            <div class="product-info">
+                <span class="product-tag">SPACE SMART</span>
+                <h3>Growing Towers</h3>
+                <p>Make the most of balconies, patios and
+                   compact spaces with vertical gardening.</p>
+                <a href="products.html" class="product-link">Explore Product ↗</a>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Images/Home Garden kit.jpeg" alt="Home hydroponic garden kit">
+            <div class="product-info">
+                <span class="product-tag">BEGINNER FRIENDLY</span>
+                <h3>Home Garden Kits</h3>
+                <p>Start growing fresh herbs and leafy greens
+                   with a convenient home gardening kit.</p>
+                <a href="products.html" class="product-link">Explore Product ↗</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<!-- SECTION 2: OUR SERVICES -->
+<section class="home-section services-section" id="services">
+    <div class="section-heading">
+        <span class="section-label">WHAT WE DO</span>
+        <h2>Smart Farming Solutions for Everyone</h2>
+        <p>From your first home garden to a commercial farm,
+           we help you grow with confidence.</p>
+    </div>
+
+    <div class="service-grid">
+        <article class="service-card">
+            <span class="service-icon">
+            <i class="fa-solid fa-seedling"></i>
+        </span>
+            <h3>Hydroponic Setup</h3>
+            <p>Get guidance on selecting and setting up
+               a suitable soil-free growing system.</p>
+            <a href="Services.html#system-setup" class="learn-more">
+    Learn More
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon">
+            <i class="fa-solid fa-building"></i>
+        </span>
+            <h3>Vertical Farming</h3>
+            <p>Explore space-efficient growing layouts
+               for homes, offices and farms.</p>
+            <a href="Services.html#vertical-farming" class="learn-more">
+    Learn More
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+        </span>
+            <h3>Grow Light Solutions</h3>
+            <p>Find lighting options suited to your plants
+               and indoor growing environment.</p>
+            <a href="Services.html#grow-lights" class="learn-more">
+    Learn More
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </span>
+            <h3>Training & Consultation</h3>
+            <p>Learn about plant care, nutrient management
+               and maintaining growing systems.</p>
+            <a href="Services.html#training" class="learn-more">
+    Learn More
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+</article>
+    </div>
+</section>
+
+
+<!-- Getting Started Guide -->
+        <section class="guide-section section-pad" id="guide">
+            <div class="guide-image">
+                <img src="Images/Hydro Grow.jpeg"
+                     alt="Greenhouse plants growing in rows">
+                <div class="guide-badge">
+                    <strong>01</strong>
+                    <span>Start small.<br>Grow confidently.</span>
+                </div>
+            </div>
+
+            <div class="guide-content">
+                <span class="eyebrow">YOUR GROWING JOURNEY</span>
+                <h2>New to Hydroponics? <span>Start Here.</span></h2>
+                <p>
+                    Hydroponics grows plants without traditional soil by
+                    delivering water and nutrients to their roots.
+                    Follow these simple steps to begin.
+                </p>
+
+                <div class="guide-step">
+                    <span>01</span>
+                    <div>
+                        <h3>Choose Your Space</h3>
+                        <p>Select a balcony, indoor shelf or sunny growing area.</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <span>02</span>
+                    <div>
+                        <h3>Select Your System</h3>
+                        <p>Try a simple water-based kit or a compact growing tower.</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <span>03</span>
+                    <div>
+                        <h3>Add Water & Nutrients</h3>
+                        <p>Follow the system instructions and nutrient label.</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <span>04</span>
+                    <div>
+                        <h3>Monitor & Harvest</h3>
+                        <p>Check water levels, plant health and light regularly.</p>
+                    </div>
+                </div>
+
+                <a href="Services.html" class="btn btn-primary">Explore Services</a>
+            </div>
+        </section>
+
+        
+<!-- FROM SEED TO HARVEST SECTION -->
+<section class="home-section growing-journey" id="growing-journey">
+
+    <div class="section-heading">
+        <span class="section-label">YOUR GREEN JOURNEY</span>
+        <h2>From Seed to Harvest</h2>
+        <p>
+            Turn your growing ideas into a green reality.
+            Follow these four simple stages to begin your journey.
+        </p>
+    </div>
+
+    <div class="journey-grid">
+
+        <article class="journey-card">
+            <div class="journey-image">
+                <img src="https://images.openai.com/static-rsc-4/laPDtwfWB7x_mYzNQVy4AVX5gczpp1MYtW0mBjUUhuLgsRih-iyQB8n3aySgAECqVFrZUuNMejgtlQ34CsvMs4uOxG6k3aVwr4HMOtHiqcfyshX1XBNC2CRhuJgwHwJ1_CMMY5y2VlRjrvypDsx1McM4yxM2LsfWuIJ-66L0RxRb8qsvPK1Mo9UEW0eZeQac?purpose=fullsize"
+                     alt="Seeds ready for planting">
+            </div>
+            <div class="journey-info">
+                <span class="journey-label">THE BEGINNING</span>
+                <h3>Choose Your Seeds</h3>
+                <p>
+                    Select herbs, leafy greens or other plants
+                    that suit your growing space and experience.
+                </p>
+            </div>
+        </article>
+
+        <article class="journey-card">
+            <div class="journey-image">
+                <img src="https://images.openai.com/static-rsc-4/8_D9HpbYccD54U1O4oKFGG8KBFbTTvFDsy6oyhKM2a5kppI2V4eMaiGUsXeQMnFAGkc35G7nu4OCMx4szwvEWk9XmXLlIpM9ECM3dt_IJ6n0JbD_LncAJIm_EmFGmHVpYXfgVc_sn5tfJC4dWUUcl53amHxiuT079HYbCpan_jB_9j9FBg7O_TWgmcuI4_dF?purpose=fullsize"
+                     alt="Hydroponic growing system">
+            </div>
+            <div class="journey-info">
+                <span class="journey-label">BUILD YOUR SYSTEM</span>
+                <h3>Set Up Your Garden</h3>
+                <p>
+                    Prepare your hydroponic system, growing medium,
+                    water supply and suitable lighting.
+                </p>
+            </div>
+        </article>
+
+        <article class="journey-card">
+            <div class="journey-image">
+                <img src="https://images.openai.com/static-rsc-4/_48DK7Mi42ES18Aer_qyID7BKCCMGYrzeb2TPNBhr3-UrBtlWAPXwJ-zUjAERQgy1I-TB147TMkhudRya3wnzY7MujOaeAlgNCVPO6RaX_VkakALY8Rqohbidf7ASNuAyykNSQy2-fpQHJpprNERe1g7yn0tfaCqORE4A4tnLgOR1q77RJDETEfl-ZWqrPtO?purpose=fullsize"
+                     alt="Young green plants being cared for">
+            </div>
+            <div class="journey-info">
+                <span class="journey-label">DAILY CARE</span>
+                <h3>Nature Your Plants</h3>
+                <p>
+                    Monitor water levels, nutrients, lighting
+                    and plant health as your garden develops.
+                </p>
+            </div>
+        </article>
+
+        <article class="journey-card">
+            <div class="journey-image">
+                <img src="Images/Fresh Harvest.jpg"
+                     alt="Freshly harvested leafy greens">
+            </div>
+            <div class="journey-info">
+                <span class="journey-label">ENJOY THE RESULTS</span>
+                <h3>Harvest & Enjoy</h3>
+                <p>
+                    Harvest your plants when they are ready
+                    and enjoy the results of your growing journey.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="journey-action">
+        <div>
+            <h3>Your growing journey starts here.</h3>
+            <p>Find the tools and equipment for your garden.</p>
+        </div>
+
+        <a href="Products.html" class="btn btn-primary">
+            Shop Growing Essentials ↗
+        </a>
+    </div>
+
+</section>
+
+
+
+<!-- SECTION 4: BLOG PREVIEW -->
+<section class="home-section blog-section" id="blogs">
+    <div class="section-heading">
+        <span class="section-label">THE GROWING JOURNAL</span>
+        <h2>Learn Something New</h2>
+        <p>Explore practical advice and useful ideas
+           to make your growing experience better.</p>
+    </div>
+
+    <div class="blog-grid">
+        <article class="blog-card">
+            <img
+                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=85"
+                alt="Plants growing in a greenhouse">
+            <div class="blog-content">
+                <span class="blog-category">BEGINNER GUIDE</span>
+                <h3>What Is Hydroponic Farming?</h3>
+                <p>Discover how plants grow without traditional soil
+                   and why nutrient solutions matter.</p>
+                <a href="Blog-Article.html?article=hydroponic" class="read-article">
+    Read Article →
+</a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img
+                src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=85"
+                alt="Healthy green plants">
+            <div class="blog-content">
+                <span class="blog-category">SUSTAINABILITY</span>
+                <h3>Benefits of Vertical Farming</h3>
+                <p>Learn how growing upward can make better
+                   use of limited space.</p>
+                <a href="Blog-Article.html?article=vertical" class="read-article">
+    Read Article →
+</a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=85"
+                alt="Gardening and plant care">
+            <div class="blog-content">
+                <span class="blog-category">PLANT CARE</span>
+                <h3>Tips for Healthy Plants</h3>
+                <p>Learn about regular monitoring, suitable lighting
+                   and balanced plant nutrition.</p>
+                   <a href="Blog-Article.html?article=lighting" class="read-article">
+    Read Article →
+</a>
+                
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<!-- SECTION 5: COMMERCIAL FARMING -->
+<section class="home-section commercial-section" id="commercial">
+    <div class="commercial-content">
+        <span class="section-label">FOR GROWING BUSINESSES</span>
+        <h2>Scale Your Vision with Smart Farming</h2>
+        <p>
+            Planning a greenhouse, indoor farm or commercial
+            vertical farming project? Explore growing systems,
+            space planning and equipment solutions designed
+            around your project requirements.
+        </p>
+
+        <div class="commercial-features">
+            <div>
+                <span>✓</span>
+                Space-efficient growing layouts
+            </div>
+            <div>
+                <span>✓</span>
+                Equipment and lighting guidance
+            </div>
+            <div>
+                <span>✓</span>
+                Growing system consultation
+            </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">
+            Discuss Your Project ↗
+        </a>
+    </div>
+
+    <div class="commercial-image">
+        <img
+            src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1000&q=85"
+            alt="Modern greenhouse for commercial growing">
+    </div>
+</section>
+
+
+<!-- SECTION 6: CONTACT / CALL TO ACTION -->
+<section class="home-section contact-cta" id="contact">
+    <div class="cta-content">
+        <span class="section-label">LET'S GROW TOGETHER</span>
+        <h2>Ready to Start Your Green Journey?</h2>
+        <p>
+            Tell us about your home garden, hydroponic setup
+            or commercial farming plans. We will help you
+            explore suitable growing solutions.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="mailto:hello@hydrofarm.example"
+               class="btn btn-light">
+                <span><i class="fa-solid fa-envelope"></i></span> Email Us
+            </a>
+
+            <a href="#products" class="btn btn-cta-outline">
+                Explore Products ↗
+            </a>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Benefits -->
+        <section class="benefits section-pad">
+            <div class="benefit">
+                <span class="benefit-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </span>
+                <div>
+                    <h3>Water-Wise Growing</h3>
+                    <p><b>Recirculating systems can reduce water use.</b></p>
+                </div>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </span>
+                <div>
+                    <h3>No Traditional Soil</h3>
+                    <p><b>Grow plants in nutrient-rich water or substrates.</b></p>
+                </div>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <div>
+                    <h3>Grow Anywhere</h3>
+                    <p><b>Make balconies and indoor spaces productive.</b></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- Brand Section -->
+        <div class="footer-brand">
+
+            <a href="#home" class="footer-logo">
+                <img src="Images/hydrofarm-logo1.png"
+                     alt="HydroGrow Logo">
+            </a>
+
+            <p class="tagline">
+                Growing a greener future, one plant at a time.
+            </p>
+
+            <p class="brand-description">
+                Every great harvest starts somewhere.
+                Let's find the right growing solution for you.
+            </p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Column 1 -->
+        <div class="footer-column">
+            <strong><h3>Explore</h3></strong>
+
+            <ul>
+                <li><a href="Home Standard.html">Home Standard</a></li>
+                <li><a href="Products.html">Our Products</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Blog.html">Farming Blog</a></li>
+                <li><a href="Commercial.html">Commercial Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+            <strong><h3>Plan Your Visit</h3></strong>
+
+            <ul>
+                <li><a href="Book-Visit.html">Visitor Information</a></li>
+                <li><a href="Book-Visit.html">Opening Hours</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="Contact.html">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+            <strong><h3>Our Products</h3></strong>
+
+            <ul>
+                <li><a href="Products.html">LED Grow Light</a></li>
+                <li><a href="Products.html">Hydroponic Nutrients</a></li>
+                <li><a href="Products.html">Growing Towers</a></li>
+                <li><a href="Products.html">Plant Care Essentials</a></li>
+                <li><a href="Products.html">Home Garden Kit</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            &copy; <span id="current-year"></span>
+            <strong>Hydroponic Farmng</strong> All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+    document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+</script>
+
+<script src="Demo website script.js"></script>
+
+</body>
+</html>

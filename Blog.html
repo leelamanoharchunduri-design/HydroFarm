@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore HydroGrow guides about hydroponic farming, vertical gardens, plant care, grow lights and growing systems.">
+    <title>HydroGrow | Farming Blog</title>
+
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="Demo website style.css">
+    <link rel="stylesheet" href="Blog.css">
+    <script src="Demo website script.js" defer></script>
+    <script src="Blog.js" defer></script>
+</head>
+<body>
+
+    
+<!-- Navigation -->
+    <header class="navbar">
+  <a href="#home" class="logo">
+    <img src="Images/hydrofarm-logo1.png" alt="HydroFarm Logo">
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+  <nav id="navMenu">
+    <div class="nav-dropdown" id="homeDropdown">
+
+        <div class="nav-dropdown" id="homeDropdown">
+
+    <button class="nav-dropdown-btn"
+            id="homeDropdownBtn"
+            aria-expanded="false"
+            aria-controls="homeDropdownMenu">
+
+        <span>Home</span>
+        <span class="dropdown-arrow">⌃</span>
+
+    </button>
+
+    <div class="dropdown-menu" id="homeDropdownMenu">
+
+        <a href="index.html"
+           class="dropdown-option">
+            Home-Classic
+        </a>
+
+        <a href="Home Standard.html"
+           class="dropdown-option">
+            Home-Standard
+        </a>
+
+    </div>
+
+</div>
+  </div>
+
+    <a href="About.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="Services.html">Services</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Commercial.html">Commercial</a>
+    <a href="Contact.html">Contact</a>
+
+</nav>
+  <div class="header-actions">
+    <button id="directionBtn" class="circle-btn" title="Switch RTL/LTR">RTL</button>
+    <button id="themeBtn" class="circle-btn" title="Switch dark/light mode">☀</button>
+
+    
+    <a href="Login.html" class="login-btn">Login</a>
+  </div>
+</header>
+
+
+    <main>
+        <!-- Section 1: Hero Banner -->
+        <section class="blog-hero">
+            <div class="blog-hero-content">
+                <span class="blog-label">THE HYDROPONIC Farming JOURNAL</span>
+                <h1>Learn. Grow. Live Green.</h1>
+                <p>
+                    Discover practical guides, smart growing techniques and
+                    expert tips to help you build a healthier, greener garden.
+                </p>
+                <a href="#blog-list" class="blog-hero-btn">Explore Articles ↓</a>
+            </div>
+        </section>
+
+        <!-- Section 2: Introduction -->
+        <section class="blog-intro">
+            <span class="blog-label">GROW YOUR KNOWLEDGE</span>
+            <h2>Ideas for Better Growing</h2>
+            <p>
+                Whether you are starting your first hydroponic garden or
+                planning a commercial vertical farm, our articles help you
+                understand the equipment, care and techniques involved.
+            </p>
+        </section>
+
+        <!-- Section 3: Blog Articles -->
+        <section class="blog-list-section" id="blog-list">
+            <div class="blog-section-heading">
+                <div>
+                    <span class="blog-label">FRESH FROM OUR BLOG</span>
+                    <h2>Explore Our Articles</h2>
+                </div>
+                <p>Practical knowledge for every grower.</p>
+            </div>
+
+        <!-- Blog Filters -->
+<div class="blog-filters">
+    <button type="button" class="filter-btn active"
+            data-filter="all" aria-pressed="true">
+        All Articles
+    </button>
+
+    <button type="button" class="filter-btn"
+            data-filter="hydroponics" aria-pressed="false">
+        Hydroponics
+    </button>
+
+    <button type="button" class="filter-btn"
+            data-filter="vertical" aria-pressed="false">
+        Vertical Farming
+    </button>
+
+    <button type="button" class="filter-btn"
+            data-filter="plant-care" aria-pressed="false">
+        Plant Care
+    </button>
+
+    <button type="button" class="filter-btn"
+            data-filter="equipment" aria-pressed="false">
+        Equipment
+    </button>
+</div>
+
+
+                <!-- Blog 1 -->
+                 <div class="blog-cards-container">
+                <article class="blog-card" data-category="hydroponics">
+                    <a href="Blog-Article.html?article=hydroponic" class="blog-image-link">
+                        <img
+                            src="https://images.openai.com/static-rsc-4/4yjA9k04-qRt1wMhQdrLrtEVIWX0zFbgTlrtzQZlGcVz4Xf34Fa-ieyVAFcbgfy5mqgse6JPRXfyQdrfE2ktPBGSFoc8ITx91dXc9Bv__PpUSb8zaP59D5TjV4ig1f-66ALI0eNDp5cfted8oOY7YVImCkbLzKHy5g2kem5Pz8fTNF64jmyPrw8H2D_4Y4uX?purpose=fullsize"
+                            alt="Green plants in a garden">
+                    </a>
+                    <div class="blog-card-content">
+                        <span class="blog-category">HYDROPONICS</span>
+                        <h3>What Is Hydroponic Farming?</h3>
+                        <p>
+                            Understand soil-free growing, nutrient solutions,
+                            common systems and how beginners can get started.
+                        </p>
+                        <a href="Blog-Article.html?article=hydroponic" class="read-article">
+                            Read Article <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card" data-category="vertical">
+                    <a href="Blog-Article.html?article=vertical" class="blog-image-link">
+                        <img
+                            src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=900&q=85"
+                            alt="Plants growing in a controlled growing space">
+                    </a>
+                    <div class="blog-card-content">
+                        <span class="blog-category">VERTICAL FARMING</span>
+                        <h3>Benefits of Vertical Farming</h3>
+                        <p>
+                            Explore how growing upwards can make better use
+                            of limited space in homes and urban farms.
+                        </p>
+                        <a href="Blog-Article.html?article=vertical" class="read-article">
+                            Read Article <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card" data-category="plant-care">
+                    <a href="Blog-Article.html?article=healthy-plants" class="blog-image-link">
+                        <img
+                            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=85"
+                            alt="Healthy green plants receiving care">
+                    </a>
+                    <div class="blog-card-content">
+                        <span class="blog-category">PLANT CARE</span>
+                        <h3>Tips for Healthy Hydroponic Plants</h3>
+                        <p>
+                            Learn about water quality, nutrients, lighting
+                            and routine checks for healthier plant growth.
+                        </p>
+                        <a href="Blog-Article.html?article=healthy-plants" class="read-article">
+                            Read Article <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 4 -->
+                <article class="blog-card" data-category="equipment">
+                    <a href="Blog-Article.html?article=grow-lights" class="blog-image-link">
+                        <img
+                            src="https://images.unsplash.com/photo-1615671524827-c1fe3973b648?auto=format&fit=crop&w=900&q=85"
+                            alt="Indoor growing equipment">
+                    </a>
+                    <div class="blog-card-content">
+                        <span class="blog-category">GROWING EQUIPMENT</span>
+                        <h3>Choosing the Right LED Grow Light</h3>
+                        <p>
+                            Discover how light intensity, coverage and daily
+                            lighting schedules affect indoor plants.
+                        </p>
+                        <a href="Blog-Article.html?article=grow-lights" class="read-article">
+                            Read Article <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 5 -->
+                <article class="blog-card" data-category="hydroponics">
+                    <a href="Blog-Article.html?article=systems" class="blog-image-link">
+                        <img
+                            src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=85"
+                            alt="Plants in a growing garden">
+                    </a>
+                    <div class="blog-card-content">
+                        <span class="blog-category">GROWING SYSTEMS</span>
+                        <h3>How to Choose a Hydroponic System</h3>
+                        <p>
+                            Compare popular growing methods and consider
+                            space, maintenance, cost and crop requirements.
+                        </p>
+                        <a href="Blog-Article.html?article=systems" class="read-article">
+                            Read Article <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 6 -->
+                <article class="blog-card" data-category="plant-care">
+                    <a href="Blog-Article.html?article=problems" class="blog-image-link">
+                        <img
+                            src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85"
+                            alt="Houseplants growing indoors">
+                    </a>
+                    <div class="blog-card-content">
+                        <span class="blog-category">TROUBLESHOOTING</span>
+                        <h3>Common Hydroponic Problems and Solutions</h3>
+                        <p>
+                            Learn how to investigate yellow leaves, algae,
+                            temperature changes and nutrient imbalances.
+                        </p>
+                        <a href="Blog-Article.html?article=problems" class="read-article">
+                            Read Article <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                </article>
+
+            </div>
+            <p class="no-blogs" hidden>No articles found in this category.</p>
+        </section>
+
+        <!-- Section 4: Newsletter / Call to Action -->
+        <section class="blog-cta">
+            <span class="blog-label">YOUR NEXT GROWING STEP</span>
+            <h2>Ready to Start Growing Smarter?</h2>
+            <p>
+                Explore our growing equipment and services to find a setup
+                that suits your space and gardening goals.
+            </p>
+            <div class="blog-cta-buttons">
+                <a href="Products.html" class="cta-primary">Explore Products</a>
+                <a href="Services.html" class="cta-secondary">Our Services</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<footer class="main-footer">
+    <div class="footer-container">
+
+        <!-- Brand section -->
+        <div class="footer-brand">
+            <div class="brand-heading">
+             <a href="#home" class="footer-logo">
+        <img src="Images/hydrofarm-logo1.png"
+             alt="HydroFarm - Hydroponic and Vertical Farming">
+    </a>
+</div>
+
+<p class="tagline">
+    Growing a greener future, one plant at a time.
+</p>
+
+
+            <p class="brand-description">
+                Every great harvest starts somewhere.
+               Let's find the right growing solution for you.
+            </p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="Demo website.html">Home-Classic</a></li>
+                <li><a href="Home Standard.html">Home-Standard</a></li>
+                <li><a href="#Plants">Our Plants</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#journal">Farming Journal</a></li>
+            </ul>
+        </div>
+
+        <!-- Plan your visit -->
+        <div class="footer-column">
+            <h3>Plan Your Visit</h3>
+            <ul>
+                <li><a href="#visitor-info">Visitor Information</a></li>
+                <li><a href="#hours">Opening Hours</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Discover -->
+        <div class="footer-column">
+            <h3>Our Products</h3>
+            <ul>
+                <li><a href="#Lighting">LED Grow Light</a></li>
+                <li><a href="#Nutrients">Hydroponic Nutrients</a></li>
+                <li><a href="#Planting Towers">Growing Towers</a></li>
+                <li><a href="#Soil">Plant Care Essentials</a></li>
+                <li><a href="#Planting">Home Garden Kit</a></li>
+            </ul>
+        </div>
+        
+
+    </div>
+
+    <!-- Bottom footer -->
+    <div class="footer-bottom">
+        <p>
+            © <span id="current-year"></span>
+            <strong>Hydrophonic Farming.</strong>
+            All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>

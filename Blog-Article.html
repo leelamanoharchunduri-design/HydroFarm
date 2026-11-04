@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore HydroFarm guides on hydroponic farming, vertical farming, LED grow lights, plant care and hydroponic systems.">
+
+    <title>HydroGrow | Farming Articles</title>
+    
+    <link rel="stylesheet" href="Demo website style.css">
+    <link rel="stylesheet" href="Blog-Article.css">
+    <script src="Demo website script.js" defer></script>
+    <script src="Blog-Article.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+  <a href="#home" class="logo">
+    <img src="Images/hydrofarm-logo1.png" alt="HydroFarm Logo">
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+  <nav id="navMenu">
+    <div class="nav-dropdown" id="homeDropdown">
+
+        <div class="nav-dropdown" id="homeDropdown">
+
+    <button class="nav-dropdown-btn"
+            id="homeDropdownBtn"
+            aria-expanded="false"
+            aria-controls="homeDropdownMenu">
+
+        <span>Home</span>
+        <span class="dropdown-arrow">⌃</span>
+
+    </button>
+
+    <div class="dropdown-menu" id="homeDropdownMenu">
+
+        <a href="index.html#home"
+           class="dropdown-option">
+            Home-Classic
+        </a>
+
+        <a href="Home Standard.html"
+           class="dropdown-option">
+            Home-Standard
+        </a>
+
+    </div>
+
+</div>
+  </div>
+
+    <a href="products.html">Products</a>
+    <a href="Services.html">Services</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Commercial.html">Commercial</a>
+    <a href="Contact.html">Contact</a>
+
+</nav>
+  <div class="header-actions">
+    <button id="directionBtn" class="circle-btn" title="Switch RTL/LTR">RTL</button>
+    <button id="themeBtn" class="circle-btn" title="Switch dark/light mode">☀</button>
+    
+    <a href="Login.html" class="login-btn">Login</a>
+  </div>
+</header>
+
+    <main>
+        <!-- Article Hero -->
+        <section class="article-hero" id="articleHero">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <span class="hero-badge">HYDROPONIC FARMING JOURNAL</span>
+
+                <div class="hero-meta">
+                    <span id="articleCategory">Farming Guide</span>
+                    <span>•</span>
+                    <span id="articleReadTime">5 min read</span>
+                </div>
+
+                <h1 id="articleHeroTitle">
+                    Discover Smarter Ways to Grow
+                </h1>
+
+                <p id="articleHeroDescription">
+                    Practical knowledge for growing healthier plants.
+                </p>
+
+                <a href="#articleContent" class="hero-button">
+                    Read Article ↓
+                </a>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <div class="article-breadcrumb">
+            <a href="Demo website.html">Home</a>
+            <span>/</span>
+            <a href="Blog.html">Blog</a>
+            <span>/</span>
+            <span id="breadcrumbTitle">Article</span>
+        </div>
+
+        <!-- Article Layout -->
+        <section class="article-layout">
+
+            <!-- Main Article -->
+            <article id="articleContent" class="article-content">
+                <p>Loading article...</p>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="article-sidebar">
+
+                <div class="sidebar-card author-card">
+                    <h3>About Hydroponic Farming</h3>
+                    <p>
+                        Hydroponic Farming shares practical information about
+                        hydroponics, vertical farming, growing equipment
+                        and sustainable plant care.
+                    </p>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>In This Article</h3>
+                    <ul id="articleContents" class="contents-list">
+                        <li>Loading contents...</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card sidebar-cta">
+                    <h3>Ready to Start Growing?</h3>
+                    <p>
+                        Explore growing systems, lights, nutrients
+                        and other gardening essentials.
+                    </p>
+                    <a href="Products.html" class="sidebar-button">
+                        Explore Products →
+                    </a>
+                </div>
+
+                <div class="sidebar-card newsletter-card">
+                    <h3>Explore More</h3>
+                    <p>Discover more useful growing guides.</p>
+                    <a href="Blog.html" class="text-link">
+                        View All Articles →
+                    </a>
+                </div>
+
+            </aside>
+        </section>
+
+        <!-- Related Articles -->
+        <section class="related-section">
+            <div class="section-heading">
+                <span class="section-label">KEEP LEARNING</span>
+                <h2>More from the Grow Journal</h2>
+                <p>
+                    Explore more guides to improve your growing knowledge.
+                </p>
+            </div>
+
+            <div id="relatedArticles" class="related-grid">
+                <!-- Related articles are added by JavaScript -->
+            </div>
+
+            <div class="all-blogs-link">
+                <a href="Blog.html" class="outline-button">
+                    View All Blogs →
+                </a>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="article-bottom-cta">
+            <div class="cta-decoration">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div class="bottom-cta-content">
+                <span class="section-label">GROW WITH CONFIDENCE</span>
+                <h2>Make Every Growing Space Count</h2>
+                <p>
+                    Learn new techniques, choose suitable equipment
+                    and discover smarter ways to care for your plants.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="Products.html" class="article-cta-btn">
+                        Explore Products →
+                    </a>
+
+                    <a href="Services.html" class="article-back-btn">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="article-footer">
+        <a href="Demo website.html" class="footer-logo">
+            <img src="Images/hydrofarm-logo1.png" alt="HydroGrow Logo">
+        </a>
+
+        <p>Grow smarter. Live greener.</p>
+
+        <div class="footer-links">
+            <a href="Demo website.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="Services.html">Services</a>
+            <a href="Blog.html">Blogs</a>
+        </div>
+
+        <p class="copyright">
+            © <span id="articleYear"></span> HydroGrow.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"
+            aria-label="Back to top">↑</button>
+
+</body>
+</html>

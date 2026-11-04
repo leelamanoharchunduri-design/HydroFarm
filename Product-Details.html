@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | HydroFarm</title>
+
+    <link rel="stylesheet" href="Demo website style.css">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="Product-Details.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <a href="Demo website.html" class="logo">
+        <img src="Images/hydrofarm-logo.png" alt="HydroGrow Logo">
+    </a>
+
+    <nav class="services-nav">
+        <a href="index.html">Home</a>
+        <a href="Home Standard.html">Home 2</a>
+        <a href="Products.html">Products</a>
+        <a href="Services.html">Services</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <div class="services-header-actions">
+        <button id="directionBtn" class="circle-btn"
+                type="button" title="Switch RTL/LTR">RTL</button>
+
+        <button id="themeBtn" class="circle-btn"
+                type="button" title="Switch dark/light mode">☀</button>
+
+        <a href="Products.html#store-cart" class="login-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </a>
+    </div>
+</header>
+
+
+<!-- BREADCRUMB -->
+<div class="product-breadcrumb">
+    <a href="Demo website.html">Home</a>
+    <i class="fa-solid fa-angle-right"></i>
+    <a href="Products.html">Products</a>
+    <i class="fa-solid fa-angle-right"></i>
+    <span id="breadcrumbProduct">Product Details</span>
+</div>
+
+
+<!-- PRODUCT DETAILS -->
+<main class="product-details-container">
+
+    <div class="product-details-image">
+        <span class="product-details-badge">HYDROGROW COLLECTION</span>
+
+        <img id="detailImage"
+             src="Images/Lighting.jpg"
+             alt="HydroGrow product">
+
+        <div class="product-image-caption">
+            <i class="fa-solid fa-leaf"></i>
+            Smart products for smarter growing
+        </div>
+    </div>
+
+    <div class="product-details-content">
+
+        <span class="product-details-category" id="detailCategory">
+            GROWING EQUIPMENT
+        </span>
+
+        <h1 id="detailName">LED Grow Light</h1>
+
+        <div class="product-details-rating">
+            <span aria-label="Rated five out of five stars">★★★★★</span>
+            <small>Product information</small>
+        </div>
+
+        <p class="product-details-price" id="detailPrice">₹2,499</p>
+
+        <p class="product-details-description" id="detailDescription"></p>
+
+        <div class="product-detail-highlights">
+            <h3>Product Highlights</h3>
+            <ul id="detailFeatures"></ul>
+        </div>
+
+        <div class="product-usage">
+            <h3>How to Use</h3>
+            <p id="detailUsage"></p>
+        </div>
+
+        
+<div class="product-details-actions">
+
+    <button type="button"
+            id="detailAddToCart"
+            class="detail-add-btn">
+        <i class="fa-solid fa-cart-plus"></i>
+        Add to Cart
+    </button>
+
+    <button type="button"
+            id="detailWishlistBtn"
+            class="detail-wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+        Add to Wishlist
+    </button>
+
+    <a href="Products.html" class="detail-back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Products
+    </a>
+
+</div>
+
+<p id="detailMessage" role="status" aria-live="polite"></p>
+
+
+        <div class="product-delivery-info">
+            <p><i class="fa-solid fa-truck-fast"></i> Delivery options depend on your location.</p>
+            <p><i class="fa-solid fa-shield-halved"></i> Review product specifications before purchase.</p>
+        </div>
+    </div>
+
+</main>
+
+
+<!-- MORE INFORMATION -->
+<section class="product-about-section">
+    <div class="product-about-heading">
+        <span>WHY CHOOSE HYDROGROW?</span>
+        <h2>Make Every Growing Space Count</h2>
+        <p>
+            Explore products that can help you plan and maintain your
+            hydroponic or vertical growing setup.
+        </p>
+    </div>
+
+    <div class="product-about-grid">
+        <article class="product-about-card">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Designed for Growing</h3>
+            <p>Explore equipment and supplies for a range of growing needs.</p>
+        </article>
+
+        <article class="product-about-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Helpful Information</h3>
+            <p>Review product details and usage guidance before making a choice.</p>
+        </article>
+
+        <article class="product-about-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Grow with Confidence</h3>
+            <p>Choose products that suit your plants, available space and setup.</p>
+        </article>
+    </div>
+</section>
+
+
+<!-- =============== SHARED FOOTER =============== -->
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="brand-heading">
+                <a href="Demo website.html#home" class="footer-logo">
+                    <img src="Images/hydrofarm-logo.png" alt="HydroFarm Logo">
+                </a>
+            </div>
+
+            <p class="tagline">
+                Growing a greener future, one plant at a time.
+            </p>
+
+            <p class="brand-description">
+                Every great harvest starts somewhere.
+                Let's find the right growing solution for you.
+            </p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="Demo website.html#home">Home 1</a></li>
+                <li><a href="Home Standard.html">Home 2</a></li>
+                <li><a href="Products.html">Products Store</a></li>
+                <li><a href="Demo website.html#services">Services</a></li>
+                <li><a href="Demo website.html#blogs">Farming Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Our Products</h3>
+            <ul>
+                <li><a href="#store-products">Grow Lights</a></li>
+                <li><a href="#store-products">Nutrients</a></li>
+                <li><a href="#store-products">Growing Towers</a></li>
+                <li><a href="#store-products">Garden Kits</a></li>
+                <li><a href="#store-wishlist">My Wishlist</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Customer Support</h3>
+            <ul>
+                <li><a href="#store-cart">Shopping Cart</a></li>
+                <li><a href="#store-checkout">Checkout</a></li>
+                <li><a href="#store-payment">Payment</a></li>
+                <li><a href="Demo website.html#guide">Growing Guide</a></li>
+                <li><a href="Demo website.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="Demo website.html#contact">Send Enquiry</a></li>
+                <li><a href="Demo website.html#commercial">Business Solutions</a></li>
+                <li><a href="Demo website.html#login">Customer Login</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © <span class="current-year"></span>
+            <strong>HydroFarm.</strong> All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    document.querySelectorAll(".current-year").forEach(function (year) {
+        year.textContent = new Date().getFullYear();
+    });
+</script>
+
+</body>
+</html>

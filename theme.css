@@ -1,0 +1,49 @@
+:root {
+    --primary: #064E46;
+    --secondary: #75C442;
+    --background: #FFFFFF;
+    --surface: #F5F8F3;
+    --text: #203329;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+}
+
+button, .btn-primary {
+    background: var(--primary);
+    color: #FFFFFF;
+}
+
+button:hover, .btn-primary:hover {
+    background: var(--secondary);
+    color: #153E2A;
+}
+
+.product-card,
+.service-card,
+.blog-card {
+    background: var(--surface);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

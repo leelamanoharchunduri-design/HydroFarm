@@ -1,0 +1,923 @@
+
+:root {
+    --blog-green: #267447;
+    --blog-dark: #153e2a;
+    --blog-light: #eaf5e9;
+    --blog-text: #203329;
+    --blog-muted: #68766d;
+    --blog-bg: #ffffff;
+    --blog-card: #ffffff;
+    --blog-border: #e0e9df;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--blog-bg);
+    color: var(--blog-text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+
+.blog-header {
+    min-height: 85px;
+    padding: 12px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.blog-logo img {
+    width: 190px;
+    max-width: 100%;
+    height: 55px;
+    object-fit: contain;
+}
+
+.blog-nav {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.blog-nav a {
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.blog-nav a:hover,
+.blog-nav a.active {
+    color: var(--blog-green);
+}
+
+/* Hero */
+
+.blog-hero {
+    min-height: 440px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(10, 39, 23, 0.88), rgba(10, 39, 23, 0.25)),
+        url("https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    color: #ffffff;
+}
+
+.blog-hero-content {
+    max-width: 720px;
+}
+
+.blog-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--blog-green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.blog-hero .blog-label {
+    color: #c7f0a8;
+}
+
+.blog-hero h1 {
+    margin-bottom: 18px;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.15;
+}
+
+.blog-hero p {
+    max-width: 620px;
+    margin-bottom: 28px;
+    font-size: 17px;
+    color: #f3f8f1;
+}
+
+.blog-hero-btn,
+.cta-primary,
+.cta-secondary {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.blog-hero-btn,
+.cta-primary {
+    background: var(--blog-green);
+    color: #ffffff;
+}
+
+.blog-hero-btn:hover,
+.cta-primary:hover {
+    background: #1b5835;
+    transform: translateY(-3px);
+}
+
+/* Introduction */
+
+.blog-intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 75px 25px 55px;
+    text-align: center;
+}
+
+.blog-intro h2,
+.blog-section-heading h2,
+.blog-cta h2 {
+    margin-bottom: 15px;
+    font-size: clamp(27px, 3.5vw, 40px);
+    line-height: 1.25;
+}
+
+.blog-intro p,
+.blog-section-heading p {
+    color: var(--blog-muted);
+}
+
+/* Blog list */
+
+.blog-list-section {
+    padding: 35px 6% 85px;
+    background: #f6faf5;
+}
+
+.blog-section-heading {
+    max-width: 1400px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-section-heading .blog-label {
+    margin-bottom: 7px;
+}
+
+.blog-section-heading h2 {
+    margin-bottom: 0;
+}
+
+.blog-filters {
+    max-width: 1400px;
+    margin: 0 auto 35px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border: 1px solid #cbdacb;
+    border-radius: 30px;
+    background: #ffffff;
+    color: var(--blog-text);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--blog-green);
+    border-color: var(--blog-green);
+    color: #ffffff;
+}
+
+.blog-grid {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.blog-card {
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--blog-border);
+    border-radius: 16px;
+    background: var(--blog-card);
+    box-shadow: 0 7px 25px rgba(21, 62, 42, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(21, 62, 42, 0.13);
+}
+
+.blog-card[hidden] {
+    display: none;
+}
+
+.blog-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 235px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover img {
+    transform: scale(1.06);
+}
+
+.blog-card-content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-category {
+    margin-bottom: 12px;
+    color: var(--blog-green);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.blog-card h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.blog-card p {
+    margin-bottom: 22px;
+    color: var(--blog-muted);
+    font-size: 14px;
+}
+
+.read-article {
+    margin-top: auto;
+    color: var(--blog-green);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.read-article span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.read-article:hover span {
+    transform: translateX(5px);
+}
+
+.no-blogs {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--blog-muted);
+}
+
+/* Call to action */
+
+.blog-cta {
+    padding: 75px 6%;
+    text-align: center;
+    background: var(--blog-light);
+}
+
+.blog-cta p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: var(--blog-muted);
+}
+
+.blog-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.cta-secondary {
+    border: 1px solid var(--blog-green);
+    color: var(--blog-green);
+    background: transparent;
+}
+
+.cta-secondary:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+
+.blog-footer {
+    padding: 35px 6%;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+.blog-footer .blog-logo {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.blog-footer p {
+    margin-top: 7px;
+    font-size: 13px;
+    color: black;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .blog-header {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 650px) {
+    .blog-header {
+        justify-content: center;
+        padding: 15px 5%;
+    }
+
+    .blog-nav {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .blog-nav a {
+        font-size: 13px;
+    }
+
+    .blog-hero {
+        min-height: 390px;
+        padding: 60px 7%;
+    }
+
+    .blog-hero p {
+        font-size: 15px;
+    }
+
+    .blog-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card img {
+        height: 230px;
+    }
+
+    .blog-list-section {
+        padding: 30px 5% 60px;
+    }
+}
+
+
+
+/* Blog cards layout: 3 columns and 2 rows */
+.blog-list-section {
+    padding: 60px 6%;
+}
+
+.blog-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* Individual blog card */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* Blog image */
+.blog-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.blog-image-link img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-image-link img {
+    transform: scale(1.05);
+}
+
+/* Blog content */
+.blog-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.blog-card-content .read-article {
+    margin-top: auto;
+    padding-top: 18px;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+    .blog-cards-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+    .blog-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-image-link img {
+        height: 220px;
+    }
+}
+
+
+
+/* Center the Blog Section Heading */
+.blog-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    margin: 0 auto 35px;
+    width: 100%;
+}
+
+.blog-section-heading > div {
+    text-align: center;
+}
+
+.blog-section-heading .blog-label {
+    display: block;
+    text-align: center;
+}
+
+.blog-section-heading h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.blog-section-heading p {
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/* =========================================
+   HYDROGROW BLOG - DARK MODE
+========================================= */
+
+body.dark {
+    background-color: #101b14;
+    color: #e8f2e9;
+}
+
+/* Navigation */
+body.dark .navbar {
+    background-color: #17251b;
+    border-color: #344a38;
+}
+
+body.dark .navbar a,
+body.dark .navbar .nav-dropdown-btn {
+    color: #e8f2e9;
+}
+
+body.dark .navbar a:hover,
+body.dark .navbar .nav-dropdown-btn:hover {
+    color: #b8df78;
+}
+
+body.dark .dropdown-menu {
+    background-color: #1b2a20;
+    border: 1px solid #344a38;
+}
+
+body.dark .dropdown-menu a {
+    color: #e8f2e9;
+}
+
+body.dark .dropdown-menu a:hover {
+    background-color: #294331;
+    color: #b8df78;
+}
+
+body.dark .circle-btn {
+    background-color: #25362a;
+    color: #e8f2e9;
+    border-color: #405744;
+}
+
+/* Hero banner */
+body.dark .blog-hero {
+    background-color: #142219;
+    color: #e8f2e9;
+}
+
+body.dark .blog-hero h1,
+body.dark .blog-hero p {
+    color: #e8f2e9;
+}
+
+body.dark .blog-label {
+    color: #b8df78;
+}
+
+body.dark .blog-hero-btn {
+    background-color: #267447;
+    color: #ffffff;
+    border: 1px solid #267447;
+}
+
+body.dark .blog-hero-btn:hover {
+    background-color: #b8df78;
+    color: #142219;
+}
+
+/* Introduction */
+body.dark .blog-intro {
+    background-color: #101b14;
+    color: #e8f2e9;
+}
+
+body.dark .blog-intro h2 {
+    color: #e8f2e9;
+}
+
+body.dark .blog-intro p {
+    color: #c1d0c3;
+}
+
+/* Blog articles section */
+body.dark .blog-list-section {
+    background-color: #101b14;
+    color: #e8f2e9;
+}
+
+body.dark .blog-section-heading h2 {
+    color: #e8f2e9;
+}
+
+body.dark .blog-section-heading p {
+    color: #c1d0c3;
+}
+
+/* Category filter buttons */
+body.dark .blog-filters .filter-btn {
+    background-color: #1b2a20;
+    color: #e8f2e9;
+    border: 1px solid #405744;
+}
+
+body.dark .blog-filters .filter-btn:hover,
+body.dark .blog-filters .filter-btn.active {
+    background-color: #267447;
+    color: #ffffff;
+    border-color: #267447;
+}
+
+/* Blog cards */
+body.dark .blog-card {
+    background-color: #1b2a20;
+    color: #e8f2e9;
+    border: 1px solid #344a38;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .blog-card-content {
+    background-color: #1b2a20;
+    color: #e8f2e9;
+}
+
+body.dark .blog-card-content h3 {
+    color: #e8f2e9;
+}
+
+body.dark .blog-card-content p {
+    color: #c1d0c3;
+}
+
+body.dark .blog-category {
+    color: #b8df78;
+}
+
+body.dark .read-article {
+    color: #b8df78;
+}
+
+body.dark .read-article:hover {
+    color: #ffffff;
+}
+
+/* Blog card images */
+.blog-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.blog-image-link img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.blog-image-link:hover img {
+    transform: scale(1.04);
+}
+
+/* Empty filter results message */
+body.dark .no-blogs {
+    color: #e8f2e9;
+}
+
+/* Newsletter / call to action */
+body.dark .blog-cta {
+    background-color: #17251b;
+    color: #e8f2e9;
+}
+
+body.dark .blog-cta h2 {
+    color: #e8f2e9;
+}
+
+body.dark .blog-cta p {
+    color: #c1d0c3;
+}
+
+body.dark .cta-primary {
+    background-color: #267447;
+    color: #ffffff;
+    border: 1px solid #267447;
+}
+
+body.dark .cta-primary:hover {
+    background-color: #b8df78;
+    color: #142219;
+}
+
+body.dark .cta-secondary {
+    background-color: transparent;
+    color: #b8df78;
+    border: 1px solid #b8df78;
+}
+
+body.dark .cta-secondary:hover {
+    background-color: #b8df78;
+    color: #142219;
+}
+
+/* Footer */
+body.dark .main-footer {
+    background-color: #0c160f;
+    color: #e8f2e9;
+    border-top: 1px solid #344a38;
+}
+
+body.dark .main-footer h3 {
+    color: #b8df78;
+}
+
+body.dark .main-footer p,
+body.dark .main-footer li,
+body.dark .main-footer .tagline,
+body.dark .main-footer .brand-description {
+    color: #c1d0c3;
+}
+
+body.dark .main-footer a {
+    color: #c1d0c3;
+}
+
+body.dark .main-footer a:hover {
+    color: #b8df78;
+}
+
+body.dark .social-icons a {
+    background-color: #1b2a20;
+    color: #b8df78;
+    border-color: #344a38;
+}
+
+body.dark .footer-bottom {
+    border-top: 1px solid #344a38;
+    color: #c1d0c3;
+}
+
+body.dark .footer-bottom p,
+body.dark .footer-bottom strong,
+body.dark .legal-links a {
+    color: #c1d0c3;
+}
+
+/* Keep keyboard focus visible */
+body.dark a:focus-visible,
+body.dark button:focus-visible {
+    outline: 2px solid #b8df78;
+    outline-offset: 3px;
+}
+
+
+
+/* Blog Hero Label - Light Blue */
+.blog-hero-content .blog-label {
+    color: #29A9F5 !important;
+    background: transparent !important;
+}
+
+
+/* Footer headings – remove yellow background in dark mode */
+body.dark .footer-column h3 {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Blog hero label – remove yellow background in dark mode */
+body.dark .blog-hero .blog-label,
+body.dark-mode .blog-hero .blog-label {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #29A9F5 !important;
+}
+
+/* Blog introduction label – dark mode */
+body.dark .blog-intro .blog-label,
+body.dark-mode .blog-intro .blog-label {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #29A9F5 !important;
+}
+
+
+/* Blog card – remove yellow backgrounds in dark mode */
+body.dark .blog-card-content .blog-category,
+body.dark .blog-card-content h3,
+body.dark .blog-card-content p,
+body.dark .blog-card-content .read-article,
+body.dark-mode .blog-card-content .blog-category,
+body.dark-mode .blog-card-content h3,
+body.dark-mode .blog-card-content p,
+body.dark-mode .blog-card-content .read-article {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* Text colors */
+body.dark .blog-card-content .blog-category,
+body.dark-mode .blog-card-content .blog-category {
+    color: #29A9F5 !important;
+}
+
+body.dark .blog-card-content h3,
+body.dark .blog-card-content p,
+body.dark-mode .blog-card-content h3,
+body.dark-mode .blog-card-content p {
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-card-content .read-article,
+body.dark-mode .blog-card-content .read-article {
+    color: #75C442 !important;
+}
+
+body.dark .blog-card-content .read-article:hover,
+body.dark-mode .blog-card-content .read-article:hover {
+    background: transparent !important;
+    color: #29A9F5 !important;
+}
+
+
+/* Fresh From Our Blog – dark mode */
+body.dark .blog-section-heading .blog-label,
+body.dark-mode .blog-section-heading .blog-label {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #29A9F5 !important;
+}
+
+
+/* Blog CTA – remove yellow backgrounds in dark mode */
+body.dark .blog-cta .blog-label,
+body.dark .blog-cta h2,
+body.dark .blog-cta p,
+body.dark .blog-cta .cta-primary,
+body.dark .blog-cta .cta-secondary,
+body.dark-mode .blog-cta .blog-label,
+body.dark-mode .blog-cta h2,
+body.dark-mode .blog-cta p,
+body.dark-mode .blog-cta .cta-primary,
+body.dark-mode .blog-cta .cta-secondary {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* CTA text colors */
+body.dark .blog-cta .blog-label,
+body.dark-mode .blog-cta .blog-label {
+    color: #29A9F5 !important;
+}
+
+body.dark .blog-cta h2,
+body.dark .blog-cta p,
+body.dark-mode .blog-cta h2,
+body.dark-mode .blog-cta p {
+    color: #FFFFFF !important;
+}
+
+/* Buttons – green background */
+body.dark .blog-cta .cta-primary,
+body.dark-mode .blog-cta .cta-primary {
+    background: #00552F !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-cta .cta-secondary,
+body.dark-mode .blog-cta .cta-secondary {
+    border: 1px solid #75C442 !important;
+    color: #FFFFFF !important;
+}
+
+/* Prevent yellow hover */
+body.dark .blog-cta .cta-primary:hover,
+body.dark .blog-cta .cta-secondary:hover,
+body.dark-mode .blog-cta .cta-primary:hover,
+body.dark-mode .blog-cta .cta-secondary:hover {
+    background: #003D22 !important;
+    background-color: #003D22 !important;
+    color: #FFFFFF !important;
+}
+

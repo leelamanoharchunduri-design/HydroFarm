@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Service Enquiry | HydroGrow</title>
+
+    <link rel="stylesheet" href="Demo website style.css">
+    <link rel="stylesheet" href="Services.css">
+    <link rel="stylesheet" href="Service-Enquiry.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+    <header class="navbar">
+  <a href="#home" class="logo">
+    <img src="Images/hydrofarm-logo1.png" alt="HydroFarm Logo">
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+  <nav id="navMenu">
+    <div class="nav-dropdown" id="homeDropdown">
+
+        <div class="nav-dropdown" id="homeDropdown">
+
+    <button class="nav-dropdown-btn"
+            id="homeDropdownBtn"
+            aria-expanded="false"
+            aria-controls="homeDropdownMenu">
+
+        <span>Home</span>
+        <span class="dropdown-arrow">⌃</span>
+
+    </button>
+
+    <div class="dropdown-menu" id="homeDropdownMenu">
+
+        <a href="index.html#home"
+           class="dropdown-option">
+            Home-Classic
+        </a>
+
+        <a href="Home Standard.html"
+           class="dropdown-option">
+            Home-Standard
+        </a>
+
+    </div>
+
+</div>
+  </div>
+
+    <a href="products.html">Products</a>
+    <a href="Services.html">Services</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Commercial.html">Commercial</a>
+    <a href="Contact.html">Contact</a>
+
+</nav>
+  <div class="header-actions">
+    <button id="directionBtn" class="circle-btn" title="Switch RTL/LTR">RTL</button>
+    <button id="themeBtn" class="circle-btn" title="Switch dark/light mode">☀</button>
+
+    
+    <a href="Login.html" class="login-btn">Login</a>
+  </div>
+</header>
+
+
+<!-- PAGE BANNER -->
+<section class="enquiry-hero">
+    <div class="enquiry-hero-content">
+        <span>HYDROPONIC SETUP SERVICE DETAILS</span>
+        <h1 id="serviceTitle">Explore Our Service</h1>
+        <p id="serviceSubtitle">
+            Learn more about our growing solutions and how we can help.
+        </p>
+
+        <a href="#serviceInformation" class="enquiry-hero-btn">
+            Explore Details
+            <i class="fa-solid fa-arrow-down"></i>
+        </a>
+    </div>
+</section>
+
+
+<!-- SERVICE DETAILS -->
+<section class="enquiry-information" id="serviceInformation">
+
+    <div class="enquiry-image">
+        <img id="serviceImage"
+             src="Images/Growing Tower.jpeg"
+             alt="HydroGrow service">
+    </div>
+
+    <div class="enquiry-content">
+        <span class="enquiry-label">HOW WE CAN HELP</span>
+
+        <h2 id="serviceHeading">A Growing Solution for You</h2>
+
+        <p id="serviceDescription"></p>
+
+        <h3>What you can explore</h3>
+        <ul id="serviceBenefits"></ul>
+
+        <div class="enquiry-note">
+            <i class="fa-solid fa-leaf"></i>
+            <p id="serviceIdeal"></p>
+        </div>
+
+        <a href="#serviceEnquiryForm" class="enquiry-action-btn">
+            Make an Enquiry
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+</section>
+
+
+
+<!-- HOW IT WORKS -->
+<section class="enquiry-steps">
+    <div class="enquiry-section-heading">
+        <span class="enquiry-label">YOUR NEXT STEPS</span>
+        <h2>How the Service Enquiry Works</h2>
+        <p>Share your requirements so you can discuss the right approach for your growing goals.</p>
+    </div>
+
+    <div class="enquiry-step-grid">
+        <article class="enquiry-step-card">
+            <span>01</span>
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h3>Share Your Needs</h3>
+            <p>Tell us about your growing space, goals and current experience.</p>
+        </article>
+
+        <article class="enquiry-step-card">
+            <span>02</span>
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Discuss Options</h3>
+            <p>Use your requirements to discuss possible systems, products or learning options.</p>
+        </article>
+
+        <article class="enquiry-step-card">
+            <span>03</span>
+            <i class="fa-solid fa-list-check"></i>
+            <h3>Plan the Next Step</h3>
+            <p>Identify the information, equipment or support needed to move forward.</p>
+        </article>
+    </div>
+</section>
+
+
+<!-- ENQUIRY FORM -->
+<section class="service-enquiry-form-section" id="serviceEnquiryForm">
+
+    <div class="enquiry-form-intro">
+        <span class="enquiry-label">LET'S TALK ABOUT YOUR GOALS</span>
+        <h2>Enquire About This Service</h2>
+        <p>
+            Complete the form with your requirements. Fields marked with
+            an asterisk are required.
+        </p>
+
+        <div class="enquiry-contact-info">
+            <p><i class="fa-solid fa-leaf"></i> Solutions for home and commercial growing</p>
+            <p><i class="fa-solid fa-seedling"></i> Guidance for different experience levels</p>
+            <p><i class="fa-solid fa-envelope"></i> Share your questions and requirements</p>
+        </div>
+    </div>
+
+    <form id="serviceEnquiryFormElement" class="service-enquiry-form">
+
+        <input type="hidden" id="selectedService" name="service">
+
+        <div class="enquiry-form-heading">
+            <h3 id="formServiceTitle">Service Enquiry</h3>
+            <p>Tell us a little about your project.</p>
+        </div>
+
+        <div class="enquiry-field">
+            <label for="customerName">Full Name *</label>
+            <input type="text" id="customerName" name="name"
+                   placeholder="Enter your full name" required>
+        </div>
+
+        <div class="enquiry-field-row">
+            <div class="enquiry-field">
+                <label for="customerEmail">Email Address *</label>
+                <input type="email" id="customerEmail" name="email"
+                       placeholder="you@example.com" required>
+            </div>
+
+            <div class="enquiry-field">
+                <label for="customerPhone">Phone Number</label>
+                <input type="tel" id="customerPhone" name="phone"
+                       placeholder="Enter your phone number"
+                       pattern="[0-9+() -]{7,20}">
+            </div>
+        </div>
+
+        <div class="enquiry-field">
+            <label for="projectType">Your Growing Space</label>
+            <select id="projectType" name="space">
+                <option value="">Select an option</option>
+                <option>Home or balcony</option>
+                <option>Indoor growing area</option>
+                <option>Rooftop or terrace</option>
+                <option>School or educational space</option>
+                <option>Commercial farm</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="enquiry-field">
+            <label for="customerMessage">Your Requirements *</label>
+            <textarea id="customerMessage" name="message" rows="5"
+                      placeholder="Describe your goals, questions or project..."
+                      required></textarea>
+        </div>
+
+        <button type="submit" class="enquiry-submit-btn">
+            Submit Enquiry
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <p class="enquiry-form-notice">
+            This demonstration form does not send information to a server.
+            Connect it to a backend or form service to receive real enquiries.
+        </p>
+
+        <p id="enquiryFormMessage" role="status" aria-live="polite"></p>
+    </form>
+</section>
+
+
+<!-- Footer -->
+
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- Brand Section -->
+        <div class="footer-brand">
+
+            <a href="#home" class="footer-logo">
+                <img src="Images/hydrofarm-logo1.png"
+                     alt="HydroGrow Logo">
+            </a>
+
+            <p class="tagline">
+                Growing a greener future, one plant at a time.
+            </p>
+
+            <p class="brand-description">
+                Every great harvest starts somewhere.
+                Let's find the right growing solution for you.
+            </p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Column 1 -->
+        <div class="footer-column">
+            <strong><h3>Explore</h3></strong>
+
+            <ul>
+                <li><a href="Home Standard.html">Home Standard</a></li>
+                <li><a href="Products.html">Our Products</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Blog.html">Farming Blog</a></li>
+                <li><a href="Commercial.html">Commercial Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+            <strong><h3>Plan Your Visit</h3></strong>
+
+            <ul>
+                <li><a href="Book-Visit.html">Visitor Information</a></li>
+                <li><a href="Book-Visit.html">Opening Hours</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="Contact.html">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+            <strong><h3>Our Products</h3></strong>
+
+            <ul>
+                <li><a href="Products.html">LED Grow Light</a></li>
+                <li><a href="Products.html">Hydroponic Nutrients</a></li>
+                <li><a href="Products.html">Growing Towers</a></li>
+                <li><a href="Products.html">Plant Care Essentials</a></li>
+                <li><a href="Products.html">Home Garden Kit</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            &copy; <span id="current-year"></span>
+            <strong>Hydroponic Farmng</strong> All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+    document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+</script>
+
+<script src="Demo website script.js" defer></script>
+<script src="Services.js" defer></script>
+<script src="Service-Enquiry.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+
+/* BOOK A VISIT PAGE */
+
+.visit-page {
+    background: #f4f8f2;
+    color: #203329;
+}
+
+/* Hero banner */
+
+.visit-hero {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    padding: 65px 8%;
+    color: #ffffff;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 57, 38, 0.94),
+            rgba(12, 57, 38, 0.68)
+        ),
+        url("Images/about-hydroponics.jpg") center / cover no-repeat,
+        #153e2a;
+}
+
+.visit-hero-content {
+    max-width: 760px;
+}
+
+.visit-eyebrow,
+.visit-label {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #8dcf68;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.visit-hero h1 {
+    margin-bottom: 18px;
+    font-size: clamp(32px, 4vw, 49px);
+    line-height: 1.2;
+}
+
+.visit-hero-content > p {
+    max-width: 650px;
+    color: #e0eee3;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.visit-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.visit-highlights span {
+    padding: 10px 13px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* Main content */
+
+.visit-form-section {
+    max-width: 1250px;
+    margin: auto;
+    padding: 75px 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+    gap: 55px;
+}
+
+.visit-info {
+    padding-top: 20px;
+}
+
+.visit-label {
+    color: #267447;
+}
+
+.visit-info h2 {
+    margin-bottom: 20px;
+    color: #153e2a;
+    font-size: 35px;
+    line-height: 1.3;
+}
+
+.visit-info > p {
+    margin-bottom: 30px;
+    color: #68766d;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.visit-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 22px;
+    padding: 17px;
+    border: 1px solid #e1eadd;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.visit-info-card > span {
+    font-size: 25px;
+}
+
+.visit-info-card h3 {
+    margin-bottom: 6px;
+    color: #267447;
+    font-size: 15px;
+}
+
+.visit-info-card p {
+    color: #68766d;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Booking form */
+
+.visit-form-card {
+    padding: 35px;
+    border: 1px solid #e1eadd;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 12px 35px rgba(21, 62, 42, 0.08);
+}
+
+.visit-form-card h2 {
+    margin-bottom: 8px;
+    color: #153e2a;
+    font-size: 29px;
+}
+
+.visit-form-description {
+    margin-bottom: 25px;
+    color: #68766d;
+    font-size: 14px;
+}
+
+.visit-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.visit-field {
+    min-width: 0;
+    margin-bottom: 20px;
+}
+
+.visit-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #203329;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.visit-field input,
+.visit-field select,
+.visit-field textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #d8e3d8;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #203329;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.visit-field input,
+.visit-field select {
+    min-height: 47px;
+}
+
+.visit-field textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.visit-field input:focus,
+.visit-field select:focus,
+.visit-field textarea:focus {
+    border-color: #267447;
+    box-shadow: 0 0 0 3px rgba(38, 116, 71, 0.10);
+}
+
+.visit-submit-btn {
+    width: 100%;
+    min-height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #267447;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.visit-submit-btn:hover {
+    background: #153e2a;
+    transform: translateY(-2px);
+}
+
+.visit-submit-btn span {
+    font-size: 20px;
+}
+
+.visit-status {
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.visit-note {
+    margin-top: 14px;
+    color: #68766d;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Dark mode */
+
+body.dark .visit-page {
+    background: #10251a;
+    color: #edf6ee;
+}
+
+body.dark .visit-info h2,
+body.dark .visit-form-card h2 {
+    color: #edf6ee;
+}
+
+body.dark .visit-info > p,
+body.dark .visit-info-card p,
+body.dark .visit-form-description,
+body.dark .visit-note {
+    color: #c2d2c6;
+}
+
+body.dark .visit-info-card,
+body.dark .visit-form-card {
+    background: #1b3426;
+    border-color: #355442;
+}
+
+body.dark .visit-info-card h3 {
+    color: #b8df78;
+}
+
+body.dark .visit-field label {
+    color: #edf6ee;
+}
+
+body.dark .visit-field input,
+body.dark .visit-field select,
+body.dark .visit-field textarea {
+    background: #10251a;
+    border-color: #496652;
+    color: #edf6ee;
+}
+
+body.dark .visit-field input::placeholder,
+body.dark .visit-field textarea::placeholder {
+    color: #b5c7b9;
+}
+
+body.dark .visit-submit-btn {
+    background: #b8df78;
+    color: #153e2a;
+}
+
+body.dark .visit-submit-btn:hover {
+    background: #d2f49e;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+    .visit-form-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .visit-info {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .visit-hero {
+        min-height: 300px;
+        padding: 45px 6%;
+    }
+
+    .visit-hero h1 {
+        font-size: 32px;
+    }
+
+    .visit-highlights {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .visit-form-section {
+        padding: 45px 15px;
+    }
+
+    .visit-info h2 {
+        font-size: 29px;
+    }
+
+    .visit-form-card {
+        padding: 23px 17px;
+    }
+
+    .visit-form-card h2 {
+        font-size: 25px;
+    }
+
+    .visit-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+
+.visit-hero-content .visit-eyebrow {
+    color: #36B4EB !important;
+}

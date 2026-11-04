@@ -1,0 +1,1131 @@
+
+/* SERVICE ENQUIRY PAGE */
+
+.enquiry-hero {
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    padding: 65px 8%;
+    color: #fff;
+    background:
+        linear-gradient(90deg, rgba(14, 48, 28, .9), rgba(14, 48, 28, .4)),
+        url("https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+}
+
+.enquiry-hero-content {
+    max-width: 750px;
+}
+
+.enquiry-hero-content > span {
+    color: #b8df78;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.enquiry-hero h1 {
+    margin: 18px 0;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.15;
+}
+
+.enquiry-hero p {
+    max-width: 650px;
+    color: #eef6ef;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.enquiry-hero-btn,
+.enquiry-action-btn,
+.enquiry-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 14px 22px;
+    border: 0;
+    border-radius: 30px;
+    background: #267447;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.enquiry-hero-btn {
+    background: #b8df78;
+    color: #153e2a;
+}
+
+.enquiry-hero-btn:hover,
+.enquiry-action-btn:hover,
+.enquiry-submit-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(.95);
+}
+
+/* Main information */
+
+.enquiry-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 8%;
+}
+
+.enquiry-image {
+    overflow: hidden;
+    min-height: 350px;
+    border-radius: 24px;
+    background: #eaf5e9;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .1);
+}
+
+.enquiry-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.enquiry-image:hover img {
+    transform: scale(1.04);
+}
+
+.enquiry-label {
+    color: #267447;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.enquiry-content h2,
+.enquiry-section-heading h2,
+.enquiry-form-intro h2 {
+    margin: 14px 0;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+}
+
+.enquiry-content > p,
+.enquiry-section-heading > p,
+.enquiry-form-intro > p {
+    color: #68766d;
+    line-height: 1.85;
+}
+
+.enquiry-content h3 {
+    margin-top: 25px;
+}
+
+.enquiry-content ul {
+    display: grid;
+    gap: 13px;
+    padding: 0;
+    list-style: none;
+}
+
+.enquiry-content li {
+    display: flex;
+    gap: 10px;
+    line-height: 1.6;
+}
+
+.enquiry-content li i {
+    margin-top: 4px;
+    color: #267447;
+}
+
+.enquiry-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: 22px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #eaf5e9;
+    color: #153e2a;
+}
+
+.enquiry-note i {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.enquiry-note p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Three steps */
+
+.enquiry-steps {
+    padding: 65px 7%;
+    background: #f6faf5;
+}
+
+.enquiry-section-heading {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.enquiry-step-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.enquiry-step-card {
+    position: relative;
+    padding: 30px 25px;
+    border: 1px solid #e1ebdf;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .04);
+}
+
+.enquiry-step-card > span {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: #b4c9b5;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.enquiry-step-card > i {
+    color: #267447;
+    font-size: 28px;
+}
+
+.enquiry-step-card h3 {
+    margin: 20px 0 10px;
+}
+
+.enquiry-step-card p {
+    color: #68766d;
+    line-height: 1.75;
+}
+
+/* Enquiry form */
+
+.service-enquiry-form-section {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    align-items: start;
+    gap: 50px;
+    padding: 75px 8%;
+}
+
+.enquiry-contact-info {
+    display: grid;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.enquiry-contact-info p {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: #68766d;
+    line-height: 1.6;
+}
+
+.enquiry-contact-info i {
+    margin-top: 4px;
+    color: #267447;
+}
+
+.service-enquiry-form {
+    padding: 32px;
+    border: 1px solid #e0e9df;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .07);
+}
+
+.enquiry-form-heading {
+    margin-bottom: 25px;
+}
+
+.enquiry-form-heading h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.enquiry-form-heading p {
+    margin: 0;
+    color: #68766d;
+}
+
+.enquiry-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.enquiry-field label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.enquiry-field input,
+.enquiry-field select,
+.enquiry-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #d7e2d7;
+    border-radius: 9px;
+    background: #fff;
+    color: #203329;
+    font: inherit;
+    outline: none;
+}
+
+.enquiry-field input:focus,
+.enquiry-field select:focus,
+.enquiry-field textarea:focus {
+    border-color: #267447;
+    box-shadow: 0 0 0 3px rgba(38, 116, 71, .12);
+}
+
+.enquiry-field textarea {
+    resize: vertical;
+}
+
+.enquiry-field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.enquiry-submit-btn {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.enquiry-form-notice {
+    margin-top: 15px;
+    color: #68766d;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+#enquiryFormMessage {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+#enquiryFormMessage.success {
+    color: #267447;
+}
+
+#enquiryFormMessage.error {
+    color: #b42318;
+}
+
+/* Dark mode */
+
+body.dark-mode .enquiry-content h2,
+body.dark-mode .enquiry-content h3,
+body.dark-mode .enquiry-section-heading h2,
+body.dark-mode .enquiry-form-intro h2,
+body.dark-mode .enquiry-form-heading h3 {
+    color: #fff;
+}
+
+body.dark-mode .enquiry-content > p,
+body.dark-mode .enquiry-section-heading > p,
+body.dark-mode .enquiry-form-intro > p,
+body.dark-mode .enquiry-contact-info p,
+body.dark-mode .enquiry-form-heading p {
+    color: #d4dfd6;
+}
+
+body.dark-mode .enquiry-steps {
+    background: #15251b;
+}
+
+body.dark-mode .enquiry-step-card,
+body.dark-mode .service-enquiry-form {
+    border-color: #354a3b;
+    background: #203329;
+    color: #f3f7f3;
+}
+
+body.dark-mode .enquiry-step-card p {
+    color: #d4dfd6;
+}
+
+body.dark-mode .enquiry-field label {
+    color: #f3f7f3;
+}
+
+body.dark-mode .enquiry-field input,
+body.dark-mode .enquiry-field select,
+body.dark-mode .enquiry-field textarea {
+    border-color: #536858;
+    background: #17251c;
+    color: #fff;
+}
+
+body.dark-mode .enquiry-field input::placeholder,
+body.dark-mode .enquiry-field textarea::placeholder {
+    color: #b9c7bb;
+}
+
+body.dark-mode .enquiry-note {
+    background: #243d2e;
+    color: #f3f7f3;
+}
+
+body.dark-mode .enquiry-label {
+    color: #9fdfa7;
+}
+
+body.dark-mode .enquiry-form-notice {
+    color: #d4dfd6;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+    .enquiry-information,
+    .service-enquiry-form-section {
+        grid-template-columns: 1fr;
+        padding: 50px 6%;
+    }
+
+    .enquiry-step-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .enquiry-image,
+    .enquiry-image img {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 520px) {
+    .enquiry-hero {
+        padding: 50px 6%;
+    }
+
+    .enquiry-field-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .service-enquiry-form {
+        padding: 22px 17px;
+    }
+}
+
+
+/* ==========================================
+   SERVICE ENQUIRY - EXTRA SECTIONS
+   File: Service-Enquiry.css
+========================================== */
+
+/* Common section styles */
+.service-features-section,
+.service-applications-section {
+    padding: 80px 7%;
+    background: var(--background, #f5f9f5);
+    color: var(--text, #203329);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Alternate background for applications */
+.service-applications-section {
+    background: var(--green-light, #eaf5e9);
+}
+
+/* Section heading */
+.service-extra-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.enquiry-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--green, #267447);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.service-extra-heading h2 {
+    margin: 0 0 16px;
+    color: var(--text, #203329);
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.25;
+}
+
+.service-extra-heading p {
+    margin: 0;
+    color: var(--muted, #68766d);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   SERVICE FEATURE CARDS
+========================================== */
+
+.service-features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.service-feature-card {
+    padding: 30px 24px;
+    background: #ffffff;
+    border: 1px solid rgba(38, 116, 71, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(22, 55, 35, 0.06);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.service-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(22, 55, 35, 0.12);
+}
+
+.service-feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    background: #eaf5e9;
+    color: #267447;
+    font-size: 24px;
+}
+
+.service-feature-card h3 {
+    margin: 0 0 12px;
+    color: var(--text, #203329);
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.service-feature-card p {
+    margin: 0;
+    color: var(--muted, #68766d);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   SERVICE APPLICATION CARDS
+========================================== */
+
+.service-applications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.service-application-card {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(38, 116, 71, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(22, 55, 35, 0.07);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.service-application-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 38px rgba(22, 55, 35, 0.14);
+}
+
+/* Application images */
+.application-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background: #e5eee5;
+}
+
+.application-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-application-card:hover .application-image img {
+    transform: scale(1.07);
+}
+
+/* Application card content */
+.application-content {
+    padding: 25px;
+}
+
+.application-content > span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--green, #267447);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.application-content h3 {
+    margin: 0 0 12px;
+    color: var(--text, #203329);
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.application-content p {
+    margin: 0 0 20px;
+    color: var(--muted, #68766d);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Enquiry link */
+.application-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--green, #267447);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.application-content a:hover {
+    gap: 14px;
+    color: var(--green-dark, #153e2a);
+}
+
+/* ==========================================
+   DARK MODE
+   Works when body has class="dark"
+========================================== */
+
+body.dark .service-features-section,
+body.dark .service-applications-section {
+    background: #111c16;
+    color: #f1f7f1;
+}
+
+body.dark .service-applications-section {
+    background: #17251b;
+}
+
+body.dark .service-extra-heading h2,
+body.dark .service-feature-card h3,
+body.dark .application-content h3 {
+    color: #f4faf4;
+}
+
+body.dark .service-extra-heading p,
+body.dark .service-feature-card p,
+body.dark .application-content p {
+    color: #c0cec2;
+}
+
+body.dark .service-feature-card,
+body.dark .service-application-card {
+    background: #202e24;
+    border-color: #35483a;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+body.dark .service-feature-card:hover,
+body.dark .service-application-card:hover {
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .service-feature-icon {
+    background: #2b4934;
+    color: #b8df78;
+}
+
+body.dark .enquiry-label,
+body.dark .application-content > span,
+body.dark .application-content a {
+    color: #b8df78;
+}
+
+body.dark .application-content a:hover {
+    color: #d7f3ad;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+    .service-features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .service-applications-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .service-features-section,
+    .service-applications-section {
+        padding: 65px 5%;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+    .service-features-section,
+    .service-applications-section {
+        padding: 50px 5%;
+    }
+
+    .service-extra-heading {
+        margin-bottom: 30px;
+    }
+
+    .service-extra-heading h2 {
+        font-size: 28px;
+    }
+
+    .service-extra-heading p {
+        font-size: 14px;
+    }
+
+    .service-features-grid,
+    .service-applications-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-feature-card {
+        padding: 25px 22px;
+    }
+
+    .service-feature-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 21px;
+    }
+
+    .application-image {
+        height: 220px;
+    }
+
+    .application-content {
+        padding: 22px;
+    }
+}
+
+
+
+
+
+/* ==========================================
+   SERVICE ENQUIRY PAGE - DARK MODE FIX
+========================================== */
+
+body.dark {
+    background: #101b14;
+    color: #e8f2e9;
+}
+
+/* Hero banner */
+body.dark .enquiry-hero {
+    background-color: #14271b;
+    color: #ffffff;
+}
+
+body.dark .enquiry-hero h1,
+body.dark .enquiry-hero p {
+    color: #ffffff;
+}
+
+/* Main service information */
+body.dark .enquiry-information {
+    background: #101b14;
+    color: #e8f2e9;
+}
+
+body.dark .enquiry-content h2,
+body.dark .enquiry-content h3,
+body.dark .enquiry-content p,
+body.dark .enquiry-content li {
+    color: #e8f2e9;
+}
+
+body.dark .enquiry-label {
+    color: #b8df78;
+}
+
+body.dark .enquiry-note {
+    background: #1b2a20;
+    color: #e8f2e9;
+    border-color: #405b45;
+}
+
+body.dark .enquiry-note p,
+body.dark .enquiry-note i {
+    color: #b8df78;
+}
+
+/* How it works section */
+body.dark .enquiry-steps {
+    background: #142219;
+    color: #e8f2e9;
+}
+
+body.dark .enquiry-section-heading h2,
+body.dark .enquiry-section-heading p {
+    color: #e8f2e9;
+}
+
+body.dark .enquiry-step-card {
+    background: #1b2a20;
+    border: 1px solid #405744;
+    color: #e8f2e9;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+body.dark .enquiry-step-card h3,
+body.dark .enquiry-step-card p {
+    color: #e8f2e9;
+}
+
+body.dark .enquiry-step-card > span {
+    color: #b8df78;
+}
+
+body.dark .enquiry-step-card > i {
+    color: #b8df78;
+}
+
+/* Enquiry form section */
+body.dark .service-enquiry-form-section {
+    background: #101b14;
+    color: #e8f2e9;
+}
+
+body.dark .enquiry-form-intro h2,
+body.dark .enquiry-form-intro p,
+body.dark .enquiry-contact-info p {
+    color: #e8f2e9;
+}
+
+body.dark .enquiry-contact-info i {
+    color: #b8df78;
+}
+
+/* Form card */
+body.dark .service-enquiry-form {
+    background: #1b2a20;
+    color: #e8f2e9;
+    border: 1px solid #405744;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .enquiry-form-heading h3,
+body.dark .enquiry-form-heading p,
+body.dark .service-enquiry-form label {
+    color: #e8f2e9;
+}
+
+body.dark .service-enquiry-form input,
+body.dark .service-enquiry-form select,
+body.dark .service-enquiry-form textarea {
+    background: #25362a;
+    color: #ffffff;
+    border: 1px solid #526756;
+}
+
+body.dark .service-enquiry-form input::placeholder,
+body.dark .service-enquiry-form textarea::placeholder {
+    color: #c1d0c3;
+    opacity: 1;
+}
+
+body.dark .service-enquiry-form input:focus,
+body.dark .service-enquiry-form select:focus,
+body.dark .service-enquiry-form textarea:focus {
+    outline: 2px solid #8fc76a;
+    outline-offset: 1px;
+}
+
+body.dark .service-enquiry-form select option {
+    background: #25362a;
+    color: #ffffff;
+}
+
+body.dark .enquiry-form-notice {
+    color: #c1d0c3;
+}
+
+body.dark #enquiryFormMessage {
+    color: #b8df78;
+}
+
+/* Submit and action buttons */
+body.dark .enquiry-action-btn,
+body.dark .enquiry-submit-btn {
+    background: #267447;
+    color: #ffffff;
+}
+
+body.dark .enquiry-action-btn:hover,
+body.dark .enquiry-submit-btn:hover {
+    background: #b8df78;
+    color: #153e2a;
+}
+
+/* Footer */
+body.dark .main-footer {
+    background: #0c160f;
+    color: #e8f2e9;
+    border-top: 1px solid #304635;
+}
+
+body.dark .main-footer h3,
+body.dark .main-footer p,
+body.dark .main-footer .tagline,
+body.dark .main-footer .brand-description,
+body.dark .main-footer .footer-bottom {
+    color: #e8f2e9;
+}
+
+body.dark .main-footer a {
+    color: #d4e4d5;
+}
+
+body.dark .main-footer a:hover {
+    color: #b8df78;
+}
+
+body.dark .main-footer .social-icons a {
+    color: #b8df78;
+}
+
+body.dark .main-footer .footer-bottom {
+    border-color: #304635;
+}
+
+body.dark .main-footer .separator {
+    color: #b8df78;
+}
+
+/* Keep the header visible in dark mode */
+body.dark .navbar {
+    background: #17251b;
+    color: #e8f2e9;
+}
+
+body.dark .navbar nav a,
+body.dark .navbar .nav-dropdown-btn {
+    color: #e8f2e9;
+}
+
+body.dark .navbar .circle-btn {
+    background: #25362a;
+    color: #ffffff;
+    border-color: #526756;
+}
+
+body.dark .navbar .dropdown-menu {
+    background: #1b2a20;
+    border-color: #405744;
+}
+
+body.dark .navbar .dropdown-menu a {
+    color: #e8f2e9;
+}
+
+body.dark .navbar .dropdown-menu a:hover {
+    background: #2b4230;
+    color: #b8df78;
+}
+
+
+/* Explore Details Button - Hydro Dark Green */
+.enquiry-hero-btn {
+    background-color: #00552F !important;
+    color: #FFFFFF !important;
+    border: 2px solid #00552F !important;
+}
+
+/* Hover Effect */
+.enquiry-hero-btn:hover {
+    background-color: #003D22 !important;
+    border-color: #003D22 !important;
+    color: #FFFFFF !important;
+}
+
+
+/* HYDROPONIC SETUP SERVICE DETAILS - Light Blue */
+.enquiry-hero-content > span {
+    color: #29A9F5 !important;
+}
+
+
+
+/* Enquiry section – remove yellow hover background */
+body.dark .enquiry-content .enquiry-action-btn:hover,
+body.dark .enquiry-content .enquiry-action-btn:focus,
+body.dark .enquiry-content .enquiry-action-btn:active {
+    background: #00552F !important;
+    background-color: #00552F !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+    border-color: #00552F !important;
+    box-shadow: none !important;
+}
+
+/* Remove yellow backgrounds from enquiry labels and headings */
+body.dark .enquiry-content .enquiry-label,
+body.dark .enquiry-content h2,
+body.dark .enquiry-content h3 {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+
+/* Remove yellow backgrounds from enquiry label and description */
+body.dark .enquiry-content .enquiry-label,
+body.dark .enquiry-content #serviceIdeal,
+body.dark .enquiry-content .enquiry-note,
+body.dark .enquiry-content .enquiry-note p {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Enquiry steps – remove yellow backgrounds in dark mode */
+body.dark .enquiry-steps .enquiry-label,
+body.dark .enquiry-steps .enquiry-section-heading h2,
+body.dark .enquiry-steps .enquiry-section-heading p,
+body.dark .enquiry-steps .enquiry-step-card span,
+body.dark .enquiry-steps .enquiry-step-card h3,
+body.dark .enquiry-steps .enquiry-step-card p {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* Keep text readable */
+body.dark .enquiry-steps .enquiry-label,
+body.dark .enquiry-steps .enquiry-step-card span {
+    color: #75C442 !important;
+}
+
+body.dark .enquiry-steps h2,
+body.dark .enquiry-steps h3,
+body.dark .enquiry-steps p {
+    color: #FFFFFF !important;
+}
+
+
+
+
+
+
+
+/* FIX: Remove yellow backgrounds from enquiry steps */
+body.dark-mode .enquiry-steps .enquiry-label,
+body.dark-mode .enquiry-steps .enquiry-section-heading h2,
+body.dark-mode .enquiry-steps .enquiry-section-heading p,
+body.dark-mode .enquiry-steps .enquiry-step-card,
+body.dark-mode .enquiry-steps .enquiry-step-card span,
+body.dark-mode .enquiry-steps .enquiry-step-card i,
+body.dark-mode .enquiry-steps .enquiry-step-card h3,
+body.dark-mode .enquiry-steps .enquiry-step-card p,
+body.dark .enquiry-steps .enquiry-label,
+body.dark .enquiry-steps .enquiry-section-heading h2,
+body.dark .enquiry-steps .enquiry-section-heading p,
+body.dark .enquiry-steps .enquiry-step-card,
+body.dark .enquiry-steps .enquiry-step-card span,
+body.dark .enquiry-steps .enquiry-step-card i,
+body.dark .enquiry-steps .enquiry-step-card h3,
+body.dark .enquiry-steps .enquiry-step-card p {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* Readable text colors */
+body.dark-mode .enquiry-steps .enquiry-label,
+body.dark-mode .enquiry-steps .enquiry-step-card span,
+body.dark-mode .enquiry-steps .enquiry-step-card i,
+body.dark .enquiry-steps .enquiry-label,
+body.dark .enquiry-steps .enquiry-step-card span,
+body.dark .enquiry-steps .enquiry-step-card i {
+    color: lightblue !important;
+}
+
+body.dark-mode .enquiry-steps h2,
+body.dark-mode .enquiry-steps h3,
+body.dark-mode .enquiry-steps p,
+body.dark .enquiry-steps h2,
+body.dark .enquiry-steps h3,
+body.dark .enquiry-steps p {
+    color: #FFFFFF !important;
+}
+
+
+/* Remove yellow background from enquiry form label */
+body.dark .enquiry-form-intro .enquiry-label,
+body.dark-mode .enquiry-form-intro .enquiry-label {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #75C442 !important;
+}
+
+
+
+
+
+
+

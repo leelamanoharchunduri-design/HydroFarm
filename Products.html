@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HydroFarm | Products Store</title>
+
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="Demo website style.css">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="Product-Details.css">
+    <script src="Product-Details.js" defer></script>
+    <script src="Demo website script.js" defer></script>
+</head>
+<body>
+
+<!-- Navigation -->
+    <header class="navbar">
+  <a href="#home" class="logo">
+    <img src="Images/hydrofarm-logo1.png" alt="HydroFarm Logo">
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+  <nav id="navMenu">
+    <div class="nav-dropdown" id="homeDropdown">
+
+        <div class="nav-dropdown" id="homeDropdown">
+
+    <button class="nav-dropdown-btn"
+            id="homeDropdownBtn"
+            aria-expanded="false"
+            aria-controls="homeDropdownMenu">
+
+        <span>Home</span>
+        <span class="dropdown-arrow">⌃</span>
+
+    </button>
+
+    <div class="dropdown-menu" id="homeDropdownMenu">
+
+        <a href="index.html#home"
+           class="dropdown-option">
+            Home-Classic
+        </a>
+
+        <a href="Home Standard.html"
+           class="dropdown-option">
+            Home-Standard
+        </a>
+
+    </div>
+
+</div>
+  </div>
+
+    <a href="About.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="Services.html">Services</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Commercial.html">Commercial</a>
+    <a href="Contact.html">Contact</a>
+
+</nav>
+  <div class="header-actions">
+    <button id="directionBtn" class="circle-btn" title="Switch RTL/LTR">RTL</button>
+    <button id="themeBtn" class="circle-btn" title="Switch dark/light mode">☀</button>
+
+    <div class="store-actions">
+        <button id="wishlistToggle" type="button">
+            ♡ Wishlist (<span id="wishlistCount">0</span>)
+        </button>
+
+        <button id="cartToggle" type="button">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+    </div>
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="products-hero">
+    <div>
+        <span>SMART GROWING STARTS HERE</span>
+        <h1>Everything You Need to Grow</h1>
+        <p>
+            Discover hydroponic systems, grow lights, plant nutrients,
+            gardening kits and vertical farming equipment.
+        </p>
+
+        <a href="#productCatalog" class="shop-btn">
+            Explore Products ↓
+        </a>
+    </div>
+</section>
+
+
+<!-- SEARCH AND FILTER -->
+
+<section class="catalog-section" id="productCatalog">
+
+    <div class="catalog-heading">
+        <div>
+            <span class="eyebrow">OUR COLLECTION</span>
+            <h2>Shop Farming Essentials</h2>
+        </div>
+
+        <input
+            type="search"
+            id="productSearch"
+            placeholder="Search products..."
+            aria-label="Search products">
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="lights">Grow Lights</button>
+        <button class="filter-btn" data-filter="nutrients">Nutrients</button>
+        <button class="filter-btn" data-filter="towers">Growing Towers</button>
+        <button class="filter-btn" data-filter="kits">Garden Kits</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+    </div>
+
+    <p id="resultCount" class="result-count"></p>
+
+    <div class="product-grid" id="productGrid"></div>
+
+    <p id="emptyMessage" hidden>
+        No products found. Try another search.
+    </p>
+</section>
+
+
+<!-- PRODUCT DETAILS MODAL -->
+
+<div class="modal-overlay" id="productModal" hidden>
+    <div class="product-modal" role="dialog"
+         aria-modal="true" aria-labelledby="detailName">
+
+        <button class="modal-close" id="closeProductModal"
+                aria-label="Close product details">X</button>
+
+        <div class="product-detail-layout">
+
+            <div class="detail-gallery">
+                <div class="detail-main-image">
+                    <img id="detailMainImage" src="" alt="">
+                </div>
+
+                <div class="thumbnail-list" id="detailThumbnails"></div>
+            </div>
+
+            <div class="detail-information">
+                <span class="detail-label">HYDROFARM PRODUCT</span>
+
+                <h2 id="detailName"></h2>
+                <p class="detail-category" id="detailCategory"></p>
+
+                <div class="detail-price">
+                    <span id="detailPrice"></span>
+                    <span class="stock-label">Available for enquiry</span>
+                </div>
+
+                <p class="detail-description" id="detailDescription"></p>
+
+                <h3>Product Uses</h3>
+                <ul id="detailUses"></ul>
+
+                <h3>Product Specifications</h3>
+                <div id="detailSpecs" class="specification-list"></div>
+
+                <label for="detailQuantity">Quantity</label>
+                <div class="quantity-control">
+                    <button type="button" id="decreaseQuantity">−</button>
+                    <input type="number" id="detailQuantity"
+                           value="1" min="1" max="99">
+                    <button type="button" id="increaseQuantity">+</button>
+                </div>
+
+                <div class="detail-buttons">
+                    <button type="button" id="detailAddToCart"
+                            class="shop-btn">
+                        Add to Cart
+                    </button>
+
+                    <button type="button" id="detailWishlist"
+                            class="wishlist-btn">
+                        ♡ Add to Wishlist
+                    </button>
+                </div>
+
+                <p id="detailMessage" role="status"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SHOPPING DRAWER -->
+
+<div class="drawer-overlay" id="drawerOverlay" hidden></div>
+
+<aside class="shopping-drawer" id="shoppingDrawer"
+       aria-label="Shopping panel" aria-hidden="true">
+
+    <div class="drawer-heading">
+        <h2 id="drawerTitle">Your Cart</h2>
+        <button id="closeDrawer" aria-label="Close panel">×</button>
+    </div>
+
+    <div id="drawerItems"></div>
+
+    <div id="cartSummary">
+        <div class="cart-total-row">
+            <strong>Subtotal</strong>
+            <strong id="cartSubtotal">₹0</strong>
+        </div>
+
+        <p class="cart-note">
+            Delivery charges and final taxes can be confirmed at checkout.
+        </p>
+
+        <button id="checkoutBtn" class="shop-btn full-width">
+            Proceed to Checkout
+        </button>
+    </div>
+</aside>
+
+
+<!-- CHECKOUT -->
+
+<section class="checkout-section" id="checkoutSection" hidden>
+    <div class="checkout-card">
+        <h2>Checkout</h2>
+        <p>Enter your details to prepare your order.</p>
+
+        <form id="checkoutForm">
+            <label for="customerName">Full Name</label>
+            <input id="customerName" name="name" required>
+
+            <label for="customerEmail">Email</label>
+            <input id="customerEmail" name="email"
+                   type="email" required>
+
+            <label for="customerPhone">Phone Number</label>
+            <input id="customerPhone" name="phone"
+                   type="tel" pattern="[0-9+\-\s()]{7,20}" required>
+
+            <label for="customerAddress">Delivery Address</label>
+            <textarea id="customerAddress" name="address"
+                      rows="3" required></textarea>
+
+            <p class="checkout-total">
+                Order subtotal: <strong id="checkoutTotal">₹0</strong>
+            </p>
+
+            <button type="submit" class="shop-btn full-width">
+                Prepare Order
+            </button>
+        </form>
+
+        <p id="checkoutMessage" role="status"></p>
+    </div>
+</section>
+
+
+<!-- PAYMENT GATEWAY SECTION -->
+<section id="paymentSection" class="payment-section" hidden>
+    <div class="payment-container">
+        <span class="payment-eyebrow">SECURE CHECKOUT</span>
+        <h2>Choose Your Payment Method</h2>
+        <p>Review your order total before continuing to payment.</p>
+
+        <div class="payment-total">
+            <span>Order Total</span>
+            <strong id="gatewayTotal">₹0</strong>
+        </div>
+
+        <div class="payment-methods">
+            <label class="payment-option">
+                <input type="radio" name="paymentMethod"
+                       value="upi" checked>
+                <span class="payment-icon">📱</span>
+                <span>
+                    <strong>UPI</strong>
+                    <small>Pay using a supported UPI app</small>
+                </span>
+            </label>
+
+            <label class="payment-option">
+                <input type="radio" name="paymentMethod"
+                       value="card">
+                <span class="payment-icon">💳</span>
+                <span>
+                    <strong>Credit / Debit Card</strong>
+                    <small>Continue through secure checkout</small>
+                </span>
+            </label>
+
+            <label class="payment-option">
+                <input type="radio" name="paymentMethod"
+                       value="netbanking">
+                <span class="payment-icon">🏦</span>
+                <span>
+                    <strong>Net Banking</strong>
+                    <small>Choose a supported bank at payment</small>
+                </span>
+            </label>
+        </div>
+
+        <button type="button" id="gatewayPayBtn"
+                class="gateway-pay-btn">
+            Continue to Secure Payment
+        </button>
+
+        <p id="gatewayMessage" role="status" aria-live="polite"></p>
+
+        <p class="payment-note">
+            <i class="fa-solid fa-lock"></i>
+            Payment details should be entered only in the
+            payment provider's secure checkout.
+        </p>
+    </div>
+</section>
+
+
+
+<!-- BOTTOM CTA -->
+
+<section class="products-cta">
+    <h2>Need Help Choosing the Right System?</h2>
+    <p>
+        Our team can help you find suitable products for your home garden
+        or commercial farming project.
+    </p>
+
+    <a href="Contact.html" class="shop-btn light-shop-btn">
+        Contact Our Team ↗
+    </a>
+</section>
+
+
+<footer class="products-footer">
+    <p>© 2026 HydroFarm. Grow Fresh. Grow Smart. Grow Sustainably.</p>
+    <a href="Contact.html">Contact Us</a>
+</footer>
+
+<script src="Demo website script.js" defer></script>
+<script src="Products.js" defer></script>
+
+</body>
+</html>

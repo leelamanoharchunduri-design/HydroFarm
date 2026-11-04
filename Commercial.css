@@ -1,0 +1,871 @@
+
+/* =====================================
+   HYDROGROW COMMERCIAL PAGE
+===================================== */
+
+:root {
+    --commercial-green: #267447;
+    --commercial-dark: #153e2a;
+    --commercial-lime: #b8df78;
+    --commercial-light: #f3f8f1;
+    --commercial-text: #203329;
+    --commercial-muted: #68766d;
+    --commercial-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--commercial-text);
+    background: var(--commercial-white);
+    line-height: 1.6;
+}
+
+body.dark {
+    --commercial-light: #17251d;
+    --commercial-text: #f1f7f1;
+    --commercial-muted: #c0cec3;
+    --commercial-white: #101a14;
+}
+
+/* HEADER */
+
+.commercial-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 12px 7%;
+    background: var(--commercial-white);
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.commercial-logo {
+    display: flex;
+    align-items: center;
+}
+
+.commercial-logo img {
+    width: 155px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.commercial-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.commercial-nav a,
+.footer-links a {
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.commercial-nav a:hover,
+.commercial-nav a.active,
+.footer-links a:hover {
+    color: var(--commercial-green);
+}
+
+.commercial-menu-btn {
+    display: none;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--commercial-green);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* COMMON BUTTONS */
+
+.commercial-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 23px;
+    border: 2px solid var(--commercial-green);
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease,
+                background 0.3s ease,
+                color 0.3s ease;
+}
+
+.commercial-btn:hover {
+    transform: translateY(-3px);
+}
+
+.primary-btn {
+    background: var(--commercial-green);
+    color: white;
+}
+
+.primary-btn:hover {
+    background: var(--commercial-dark);
+    border-color: var(--commercial-dark);
+    color: white;
+}
+
+.outline-btn {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.outline-btn:hover {
+    background: white;
+    color: var(--commercial-dark);
+}
+
+/* SECTION 1: HERO */
+
+.commercial-hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 75px 8%;
+    color: white;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 35, 20, 0.94) 0%,
+            rgba(10, 35, 20, 0.78) 48%,
+            rgba(10, 35, 20, 0.15) 100%
+        ),
+        url("https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=2000&q=90")
+        center / cover no-repeat;
+}
+
+.commercial-hero-content {
+    width: 100%;
+    max-width: 720px;
+}
+
+.commercial-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--commercial-green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.commercial-hero .commercial-label {
+    color: var(--commercial-lime);
+}
+
+.commercial-hero h1 {
+    margin: 0 0 20px;
+    font-size: clamp(38px, 5.5vw, 67px);
+    line-height: 1.12;
+}
+
+.commercial-hero h1 span {
+    display: block;
+    color: var(--commercial-lime);
+}
+
+.commercial-hero-content > p {
+    max-width: 610px;
+    margin-bottom: 28px;
+    color: #edf4ee;
+    font-size: 17px;
+}
+
+.commercial-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.commercial-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.commercial-stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.commercial-stats strong {
+    color: var(--commercial-lime);
+    font-size: 26px;
+}
+
+.commercial-stats span {
+    color: #edf4ee;
+    font-size: 13px;
+}
+
+/* SECTION 2: SOLUTIONS */
+
+.commercial-solutions {
+    padding: 90px 7%;
+    background: var(--commercial-light);
+}
+
+.commercial-heading {
+    max-width: 720px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.commercial-heading > span {
+    color: var(--commercial-green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.commercial-heading h2,
+.benefits-content h2,
+.enquiry-intro h2 {
+    margin: 12px 0;
+    color: var(--commercial-text);
+    font-size: clamp(29px, 4vw, 43px);
+    line-height: 1.2;
+}
+
+.commercial-heading p,
+.benefits-content > p,
+.enquiry-intro > p {
+    color: var(--commercial-muted);
+}
+
+.commercial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.commercial-card {
+    overflow: hidden;
+    border-radius: 13px;
+    background: var(--commercial-white);
+    box-shadow: 0 8px 28px #163c2410;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.commercial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px #163c2420;
+}
+
+.commercial-card > img {
+    display: block;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.commercial-card:hover > img {
+    transform: scale(1.04);
+}
+
+.commercial-card-content {
+    padding: 25px;
+}
+
+.solution-number {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--commercial-green);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.commercial-card h3 {
+    margin: 0 0 12px;
+    color: var(--commercial-text);
+    font-size: 21px;
+}
+
+.commercial-card p {
+    min-height: 78px;
+    color: var(--commercial-muted);
+    font-size: 14px;
+}
+
+.commercial-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--commercial-green);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.commercial-card a:hover {
+    color: var(--commercial-lime);
+}
+
+/* SECTION 3: BENEFITS */
+
+.commercial-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    padding: 100px 8%;
+    background: var(--commercial-white);
+}
+
+.benefits-image {
+    position: relative;
+    min-width: 0;
+}
+
+.benefits-image > img {
+    display: block;
+    width: 100%;
+    height: 540px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+    right: -20px;
+    bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 290px;
+    padding: 18px 22px;
+    border-radius: 10px;
+    background: var(--commercial-white);
+    color: var(--commercial-text);
+    box-shadow: 0 8px 25px #00000018;
+}
+
+.image-caption > span {
+    font-size: 30px;
+}
+
+.image-caption strong {
+    font-size: 16px;
+}
+
+.image-caption p {
+    margin: 3px 0 0;
+    color: var(--commercial-muted);
+    font-size: 12px;
+}
+
+.benefits-content h2 {
+    margin-bottom: 18px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    margin: 26px 0;
+}
+
+.benefit-icon {
+    display: grid;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 10px;
+    background: var(--commercial-light);
+    font-size: 23px;
+}
+
+.benefit-item h3 {
+    margin: 0 0 5px;
+    color: var(--commercial-text);
+    font-size: 17px;
+}
+
+.benefit-item p {
+    margin: 0;
+    color: var(--commercial-muted);
+    font-size: 14px;
+}
+
+.benefits-content > .commercial-btn {
+    margin-top: 10px;
+}
+
+/* SECTION 4: ENQUIRY */
+
+.commercial-enquiry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 60px;
+    padding: 90px 8%;
+    background: var(--commercial-light);
+}
+
+.enquiry-intro > img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    margin-top: 25px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.enquiry-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+    padding: 17px;
+    border-left: 4px solid var(--commercial-green);
+    border-radius: 6px;
+    background: var(--commercial-white);
+}
+
+.enquiry-note > span {
+    font-size: 24px;
+}
+
+.enquiry-note p {
+    margin: 0;
+    color: var(--commercial-muted);
+    font-size: 14px;
+}
+
+.enquiry-form {
+    padding: 32px;
+    border-radius: 13px;
+    background: var(--commercial-white);
+    box-shadow: 0 10px 35px #0000000b;
+}
+
+.enquiry-form h3 {
+    margin: 0 0 5px;
+    color: var(--commercial-text);
+    font-size: 25px;
+}
+
+.enquiry-form > p:not(.form-message) {
+    margin: 0 0 24px;
+    color: var(--commercial-muted);
+    font-size: 14px;
+}
+
+.enquiry-form label {
+    display: block;
+    margin: 16px 0 7px;
+    color: var(--commercial-text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd7cd;
+    border-radius: 6px;
+    outline: none;
+    background: var(--commercial-white);
+    color: var(--commercial-text);
+    font: inherit;
+    font-size: 14px;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus {
+    border-color: var(--commercial-green);
+    box-shadow: 0 0 0 3px #26744720;
+}
+
+.enquiry-form textarea {
+    resize: vertical;
+}
+
+.enquiry-form button {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.form-message {
+    margin-top: 14px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.form-message.success {
+    color: var(--commercial-green);
+}
+
+.form-message.error {
+    color: #c0392b;
+}
+
+/* Footer */
+
+.services-footer {
+    padding: 40px 20px;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.services-footer-logo img {
+    display: inline-block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+}
+
+.services-footer > p {
+    color: black;
+    line-height: 1.7;
+}
+
+.services-footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 22px 0;
+}
+
+.services-footer-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.services-footer-links a:hover {
+    color: #b8df78;
+}
+
+/* TABLETS */
+
+@media (max-width: 1000px) {
+    .commercial-header {
+        padding: 12px 4%;
+    }
+
+    .commercial-nav {
+        gap: 15px;
+    }
+
+    .commercial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .commercial-benefits,
+    .commercial-enquiry {
+        gap: 35px;
+        padding: 70px 5%;
+    }
+
+    .benefits-image > img {
+        height: 480px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .commercial-header {
+        flex-wrap: wrap;
+        padding: 10px 5%;
+    }
+
+    .commercial-logo img {
+        width: 125px;
+    }
+
+    .commercial-menu-btn {
+        display: block;
+    }
+
+    .commercial-nav {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        padding: 8px 0;
+    }
+
+    .commercial-nav.open {
+        display: flex;
+    }
+
+    .commercial-nav a {
+        padding: 12px;
+        border-bottom: 1px solid #88888820;
+    }
+
+    .commercial-hero {
+        min-height: 590px;
+        padding: 65px 6%;
+        background-position: 58% center;
+    }
+
+    .commercial-hero-content > p {
+        font-size: 15px;
+    }
+
+    .commercial-stats {
+        gap: 22px;
+        margin-top: 35px;
+    }
+
+    .commercial-stats strong {
+        font-size: 22px;
+    }
+
+    .commercial-stats span {
+        font-size: 11px;
+    }
+
+    .commercial-solutions {
+        padding: 65px 5%;
+    }
+
+    .commercial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .commercial-card > img {
+        height: 240px;
+    }
+
+    .commercial-card p {
+        min-height: auto;
+    }
+
+    .commercial-benefits,
+    .commercial-enquiry {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 65px 6%;
+    }
+
+    .benefits-image > img {
+        height: 350px;
+    }
+
+    .image-caption {
+        right: 10px;
+        bottom: 12px;
+    }
+
+    .enquiry-form {
+        padding: 23px 18px;
+    }
+
+    .enquiry-intro > img {
+        height: 230px;
+    }
+
+    .commercial-footer {
+        padding: 35px 5% 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+
+
+/* COMMERCIAL PROJECT IMAGE AND DETAILS */
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    background: var(--commercial-light);
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.commercial-card:hover .project-image img {
+    transform: scale(1.07);
+}
+
+.project-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 7px 12px;
+    border-radius: 30px;
+    background: #ffffffed;
+    color: #205b38;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.commercial-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: calc(100% - 250px);
+}
+
+.commercial-card h3 {
+    line-height: 1.35;
+}
+
+.project-features {
+    width: 100%;
+    padding-left: 20px;
+    margin: 5px 0 15px;
+    color: var(--commercial-muted);
+    font-size: 13px;
+}
+
+.project-features li {
+    padding: 4px 0;
+}
+
+.project-features li::marker {
+    color: var(--commercial-green);
+}
+
+.commercial-card-content > a {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.commercial-project-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1250px;
+    margin: 55px auto 0;
+    padding: 32px;
+    border-radius: 12px;
+    background: var(--commercial-dark);
+    color: white;
+}
+
+.commercial-project-cta > div {
+    flex: 1;
+}
+
+.commercial-project-cta span {
+    color: var(--commercial-lime);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.commercial-project-cta h3 {
+    margin: 8px 0;
+    font-size: clamp(22px, 3vw, 30px);
+}
+
+.commercial-project-cta p {
+    margin-bottom: 0;
+    color: #e0ebe2;
+    font-size: 14px;
+}
+
+.commercial-project-cta .commercial-btn {
+    flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+    .project-image {
+        height: 230px;
+    }
+
+    .commercial-card-content {
+        height: auto;
+        min-height: 0;
+    }
+
+    .commercial-card-content > a {
+        margin-top: 12px;
+    }
+
+    .commercial-project-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 35px;
+        padding: 24px;
+    }
+
+    .commercial-project-cta .commercial-btn {
+        width: 100%;
+    }
+}
+
+/* SMART AGRICULTURE FOR BUSINESS - Light Blue */
+.commercial-label {
+    color: #29A9F5 !important;
+}
+
+/* Smart Farming. - Light Blue */
+.commercial-hero-content h1 span {
+    color: #29A9F5 !important;
+}
+/* Start Your Project - Dark Green */
+.commercial-btn.outline-btn {
+    background-color: #00552F !important;
+    color: #FFFFFF !important;
+    border: 2px solid #00552F !important;
+}
+
+/* Hover Effect */
+.commercial-btn.outline-btn:hover {
+    background-color: #003D22 !important;
+    border-color: #003D22 !important;
+    color: #FFFFFF !important;
+}
+a[data-service]:hover {
+    color: #36B4EB !important;
+    transition: color 0.3s ease;
+}
+/* Commercial CTA label - Light Blue */
+.commercial-project-cta span {
+    color: #36B4EB !important;
+}

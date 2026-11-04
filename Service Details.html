@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | HydroFarm</title>
+
+    <link rel="stylesheet" href="Register.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="register-layout">
+
+        <section class="register-card">
+
+            <!-- HydroFarm Logo -->
+            <div class="register-logo">
+                <img src="Images/hydrofarm-logo1.png"
+                     alt="HydroFarm Logo">
+            </div>
+
+            <!-- Heading -->
+            <div class="register-heading">
+                <h1>Create Account</h1>
+                <p>Join us and start your sustainable growing journey</p>
+            </div>
+
+            <!-- Registration Form -->
+            <form id="registerForm">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            pattern="[0-9+\-\s()]{7,20}"
+                            title="Enter a valid phone number."
+                            required
+                        >
+                    </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="show-password"
+                            data-toggle-password="password"
+                            aria-label="Show password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Re-enter your password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="show-password"
+                            data-toggle-password="confirmPassword"
+                            aria-label="Show password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="terms-row">
+                    <label>
+                        <input type="checkbox" id="terms" required>
+                        <span>
+                            I agree to the
+                            <a href="Terms.html">Terms & Conditions</a>
+                            and
+                            <a href="Privacy.html">Privacy Policy</a>.
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Create Account -->
+                <button type="submit" class="register-button">
+                    <i class="fas fa-user-plus"></i>
+                    Create Account
+                </button>
+
+                <p id="registerMessage" role="status"></p>
+
+            </form>
+
+            <!-- Divider -->
+            <div class="separator">
+                <span></span>
+                <p>Or continue with</p>
+                <span></span>
+            </div>
+
+            <!-- Social Registration -->
+            <div class="social-login">
+
+                <button type="button"
+                        class="social-button google-button"
+                        id="googleRegister">
+
+                    <i class="fab fa-google google-icon"></i>
+                    Google
+
+                </button>
+
+                <button type="button"
+                        class="social-button apple-button"
+                        id="appleRegister">
+
+                    <i class="fab fa-apple"></i>
+                    Apple
+
+                </button>
+
+            </div>
+
+            <!-- Login Link -->
+            <p class="login-text">
+                Already have an account?
+                <a href="Login.html">Login</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="register-footer">
+        © <span id="currentYear"></span> HydroFarm.
+        Grow Fresh. Grow Smart. Grow Sustainably.
+    </footer>
+
+    <script src="Register.js"></script>
+
+</body>
+</html>
