@@ -214,9 +214,9 @@ const products = [
         categoryName: "Growing Media",
         price: 699,
         images: [
-            "Images/Nutrients.jpg",
-            "Images/Plant care.jpeg",
-            "Images/Nutrients.jpg"
+            "Nutrients.jpg",
+            "Plant care.jpeg",
+            "Nutrients.jpg"
         ],
         description:
             "A sample growing-media listing for supporting plant roots in " +
